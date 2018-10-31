@@ -1,0 +1,142 @@
+id,attribute_id/id,name
+product_attribute_value_02m,default_products.product_attribute_BbA,0-2 months
+product_attribute_value_36m,default_products.product_attribute_BbA,3-6 months
+product_attribute_value_712m,default_products.product_attribute_BbA,7-12 months
+product_attribute_value_1318m,default_products.product_attribute_BbA,13-18 months
+product_attribute_value_1924m,default_products.product_attribute_BbA,19-24 months
+product_attribute_value_75B,default_products.product_attribute_BS,75B
+product_attribute_value_80B,default_products.product_attribute_BS,80B
+product_attribute_value_85B,default_products.product_attribute_BS,85B
+product_attribute_value_90b,default_products.product_attribute_BS,90b
+product_attribute_value_95B,default_products.product_attribute_BS,95B
+product_attribute_value_100C,default_products.product_attribute_BS,100C
+product_attribute_value_D,default_products.product_attribute_BS,D+ (big)
+product_attribute_value_23y,default_products.product_attribute_CbA,2-3 years
+product_attribute_value_45y,default_products.product_attribute_CbA,4-5 years
+product_attribute_value_68y,default_products.product_attribute_CbA,6-8 years
+product_attribute_value_912y,default_products.product_attribute_CbA,9-12 years
+product_attribute_value_1315y,default_products.product_attribute_CbA,13-15 years
+product_attribute_value_Size1,default_products.product_attribute_DS,Size 1
+product_attribute_value_Size2,default_products.product_attribute_DS,Size 2 (3-5 kg)
+product_attribute_value_Size3,default_products.product_attribute_DS,Size 3 (6-9 kg)
+product_attribute_value_Size4,default_products.product_attribute_DS,Size 4 (10-18 kg)
+product_attribute_value_Size5,default_products.product_attribute_DS,Size 5
+product_attribute_value_Size6,default_products.product_attribute_DS,Size 6
+product_attribute_value_Mixed,default_products.product_attribute_MS,Mixed
+product_attribute_value_Onesize,default_products.product_attribute_O,Onesize
+product_attribute_value_S,default_products.product_attribute_CS,S
+product_attribute_value_M,default_products.product_attribute_CS,M
+product_attribute_value_L,default_products.product_attribute_CS,L
+product_attribute_value_XL,default_products.product_attribute_CS,XL
+product_attribute_value_css19,default_products.product_attribute_CSS,19
+product_attribute_value_css20,default_products.product_attribute_CSS,20
+product_attribute_value_css21,default_products.product_attribute_CSS,21
+product_attribute_value_css22,default_products.product_attribute_CSS,22
+product_attribute_value_css23,default_products.product_attribute_CSS,23
+product_attribute_value_css24,default_products.product_attribute_CSS,24
+product_attribute_value_css25,default_products.product_attribute_CSS,25
+product_attribute_value_css26,default_products.product_attribute_CSS,26
+product_attribute_value_css27,default_products.product_attribute_CSS,27
+product_attribute_value_css28,default_products.product_attribute_CSS,28
+product_attribute_value_css29,default_products.product_attribute_CSS,29
+product_attribute_value_css30,default_products.product_attribute_CSS,30
+product_attribute_value_css31,default_products.product_attribute_CSS,31
+product_attribute_value_css32,default_products.product_attribute_CSS,32
+product_attribute_value_css33,default_products.product_attribute_CSS,33
+product_attribute_value_css34,default_products.product_attribute_CSS,34
+product_attribute_value_css35,default_products.product_attribute_CSS,35
+product_attribute_value_css36,default_products.product_attribute_CSS,36 and bigger
+product_attribute_value_fss34,default_products.product_attribute_FSS,34
+product_attribute_value_fss35,default_products.product_attribute_FSS,35
+product_attribute_value_fss36,default_products.product_attribute_FSS,36
+product_attribute_value_fss37,default_products.product_attribute_FSS,37
+product_attribute_value_fss38,default_products.product_attribute_FSS,38
+product_attribute_value_fss39,default_products.product_attribute_FSS,39
+product_attribute_value_fss40,default_products.product_attribute_FSS,40
+product_attribute_value_fss41,default_products.product_attribute_FSS,41
+product_attribute_value_fss42,default_products.product_attribute_FSS,42 and bigger
+product_attribute_value_mss38,default_products.product_attribute_MSS,38 and smaller
+product_attribute_value_mss39,default_products.product_attribute_MSS,39
+product_attribute_value_mss40,default_products.product_attribute_MSS,40
+product_attribute_value_mss41,default_products.product_attribute_MSS,41
+product_attribute_value_mss42,default_products.product_attribute_MSS,42
+product_attribute_value_mss43,default_products.product_attribute_MSS,43
+product_attribute_value_mss44,default_products.product_attribute_MSS,44
+product_attribute_value_mss45,default_products.product_attribute_MSS,45
+product_attribute_value_mss46,default_products.product_attribute_MSS,46 and bigger
+product_attribute_value_gm,default_products.product_attribute_G,Male
+product_attribute_value_gf,default_products.product_attribute_G,Female
+product_attribute_value_gu,default_products.product_attribute_G,Unisex
+product_attribute_value_agb,default_products.product_attribute_AG,Baby
+product_attribute_value_agc,default_products.product_attribute_AG,Child
+product_attribute_value_aga,default_products.product_attribute_AG,Adult
+product_attribute_value_age,default_products.product_attribute_AG,Everyone
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,

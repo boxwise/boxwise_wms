@@ -1,0 +1,16 @@
+id,parent_id/id,name
+product.product_category_all,,All
+product.product_category_fo,product.product_category_all,Food
+product.product_category_hy,product.product_category_all,Hygiene
+product.product_category_cl,product.product_category_all,Clothing
+product.product_category_ho,product.product_category_all,Household
+product.product_category_ot,product.product_category_all,Other
+product.product_category_uw,product.product_category_cl,Underwear
+product.product_category_bo,product.product_category_cl,Bottom
+product.product_category_to,product.product_category_cl,Top
+product.product_category_sh,product.product_category_all,Shoes
+product.product_category_ac,product.product_category_all,Accessories
+product.product_category_ja,product.product_category_cl,Jacket
+product.product_category_dr,product.product_category_cl,Dress
+product.product_category_ba,product.product_category_all,Baby
+product.product_category_ac,product.product_category_all,Accessories

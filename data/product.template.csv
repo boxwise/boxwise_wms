@@ -1,0 +1,104 @@
+id,name,sale_ok,purchase_ok,type,list_price,description_sale,categ_id/id
+product_template_104,Bra,FALSE,TRUE,product,40,,product.product_category_uw
+product_template_1,Socks,FALSE,TRUE,product,10,,product.product_category_uw
+product_template_2,Tights,FALSE,TRUE,product,20,,product.product_category_uw
+product_template_3,Undershirt,FALSE,TRUE,product,10,,product.product_category_uw
+product_template_4,Underwear,FALSE,TRUE,product,15,,product.product_category_uw
+product_template_5,Winter Socks,FALSE,TRUE,product,10,"Thick, wool socks.",product.product_category_uw
+product_template_6,Formal Trousers,FALSE,TRUE,product,60,,product.product_category_bo
+product_template_7,Jeans,FALSE,TRUE,product,50,,product.product_category_bo
+product_template_8,Leggings,FALSE,TRUE,product,10,,product.product_category_bo
+product_template_9,Maternity bottom,FALSE,TRUE,product,50,Pregnancy wear bottom,product.product_category_bo
+product_template_10,Shorts,FALSE,TRUE,product,20,,product.product_category_bo
+product_template_11,Skirt/Shorts,FALSE,TRUE,product,20,,product.product_category_bo
+product_template_12,Sweatpants,FALSE,TRUE,product,50,,product.product_category_bo
+product_template_13,Trousers,FALSE,TRUE,product,50,,product.product_category_bo
+product_template_14,Button Up Shirt,FALSE,TRUE,product,40,,product.product_category_to
+product_template_15,Jumper,FALSE,TRUE,product,0,,product.product_category_to
+product_template_16,Long sleeve,FALSE,TRUE,product,50,,product.product_category_to
+product_template_19,Maternity top,FALSE,TRUE,product,50,Pregnancy wear Tops,product.product_category_to
+product_template_20,Short Sleeve,FALSE,TRUE,product,30,,product.product_category_to
+product_template_21,Accessories,FALSE,TRUE,product,10,Jewelry etc,product.product_category_ac
+product_template_22,Baby creme,FALSE,TRUE,product,5,,product.product_category_ac
+product_template_23,Belt,FALSE,TRUE,product,10,,product.product_category_ac
+product_template_24,Gloves,FALSE,TRUE,product,15,,product.product_category_ac
+product_template_25,Hair accessories,FALSE,TRUE,product,5,,product.product_category_ac
+product_template_26,Hat,FALSE,TRUE,product,15,,product.product_category_ac
+product_template_27,Insole,FALSE,TRUE,product,20,,product.product_category_ac
+product_template_28,Plastic bag,FALSE,TRUE,product,20,,product.product_category_ac
+product_template_29,Scarf,FALSE,TRUE,product,15,,product.product_category_ac
+product_template_30,Sleeping masks,FALSE,TRUE,product,10,,product.product_category_ac
+product_template_31,Small Bag,FALSE,TRUE,product,20,"Handbag, Purse, cheap bag",product.product_category_ac
+product_template_32,Wallets and moneybelts,FALSE,TRUE,product,0,,product.product_category_ac
+product_template_33,Winter Hat,FALSE,TRUE,product,15,,product.product_category_ac
+product_template_34,Light Shoes,FALSE,TRUE,product,70,,product.product_category_sh
+product_template_35,Rubber Boots,FALSE,TRUE,product,50,"Wellies,",product.product_category_sh
+product_template_36,Sandal,FALSE,TRUE,product,30,,product.product_category_sh
+product_template_37,Shoes,FALSE,TRUE,product,20,,product.product_category_sh
+product_template_38,Slipper,FALSE,TRUE,product,30,,product.product_category_sh
+product_template_39,Slippers,FALSE,TRUE,product,30,,product.product_category_sh
+product_template_40,Sport shoes,FALSE,TRUE,product,80,,product.product_category_sh
+product_template_41,Winter Shoes,FALSE,TRUE,product,70,,product.product_category_sh
+product_template_42,Autumn Jacket,FALSE,TRUE,product,50,,product.product_category_ja
+product_template_43,Formal Jacket,FALSE,TRUE,product,60,,product.product_category_ja
+product_template_44,Light Jacket,FALSE,TRUE,product,40,,product.product_category_ja
+product_template_45,Rain Jacket / Rainwear,FALSE,TRUE,product,30,,product.product_category_ja
+product_template_46,Sleeveless Jacket / Vest,FALSE,TRUE,product,50,,product.product_category_ja
+product_template_47,Snowsuit,FALSE,TRUE,product,70,,product.product_category_ja
+product_template_48,Suit Jacket,FALSE,TRUE,product,50,,product.product_category_ja
+product_template_49,Winter Jacket,FALSE,TRUE,product,60,,product.product_category_ja
+product_template_50,Dress,FALSE,TRUE,product,50,,product.product_category_dr
+product_template_51,Hijab,FALSE,TRUE,product,15,,product.product_category_dr
+product_template_52,Traditional Dress,FALSE,TRUE,product,60,,product.product_category_dr
+product_template_53,Winter Dress/Skirt,FALSE,TRUE,product,60,,product.product_category_dr
+product_template_54,Winter Skirt,FALSE,TRUE,product,50,,product.product_category_dr
+product_template_55,Baby carrier,FALSE,TRUE,product,40,,product.product_category_ba
+product_template_56,Baby pacifier,FALSE,TRUE,product,10,,product.product_category_ba
+product_template_57,Baby wipes,FALSE,TRUE,product,30,,product.product_category_ba
+product_template_58,Bib,FALSE,TRUE,product,10,,product.product_category_ba
+product_template_59,Body,FALSE,TRUE,product,30,One piece without legs,product.product_category_ba
+product_template_60,Bottom,FALSE,TRUE,product,30,,product.product_category_ba
+product_template_61,Jacket,FALSE,TRUE,product,60,,product.product_category_ba
+product_template_62,Newborn - 2 months,FALSE,TRUE,product,30,,product.product_category_ba
+product_template_63,One Piece (with legs),FALSE,TRUE,product,20,,product.product_category_ba
+product_template_64,Sheet,FALSE,TRUE,product,20,,product.product_category_ba
+product_template_65,Top,FALSE,TRUE,product,30,,product.product_category_ba
+product_template_66,Basin white,FALSE,TRUE,product,60,,product.product_category_ho
+product_template_67,Big Bag,FALSE,TRUE,product,80,"Backpack, Suitcase, Luggage, Travel bags",product.product_category_ho
+product_template_68,Blanket,FALSE,TRUE,product,30,",",product.product_category_ho
+product_template_69,Broom,FALSE,TRUE,product,0,,product.product_category_ho
+product_template_70,Duvet,FALSE,TRUE,product,80,Thick winter blankets,product.product_category_ho
+product_template_71,Duvet covers,FALSE,TRUE,product,30,,product.product_category_ho
+product_template_72,Hot water bottle,FALSE,TRUE,product,30,,product.product_category_ho
+product_template_73,Knitting set,FALSE,TRUE,product,10,,product.product_category_ho
+product_template_74,Laundry soap,FALSE,TRUE,product,15,,product.product_category_hy
+product_template_75,Nightwear,FALSE,TRUE,product,20,,product.product_category_cl
+product_template_76,Pillow,FALSE,TRUE,product,0,,product.product_category_ho
+product_template_77,Pillow cases,FALSE,TRUE,product,15,,product.product_category_ho
+product_template_78,Pregnancy,FALSE,TRUE,product,40,,product.product_category_cl
+product_template_79,Sleeping bag,FALSE,TRUE,product,30,,product.product_category_ho
+product_template_80,Stroller,FALSE,TRUE,product,50,Baby Trolly,product.product_category_ba
+product_template_81,Tie,FALSE,TRUE,product,10,,product.product_category_ac
+product_template_82,Towels,FALSE,TRUE,product,20,,product.product_category_ho
+product_template_83,Body Sponge,FALSE,TRUE,product,10,,product.product_category_hy
+product_template_84,Condoms,FALSE,TRUE,product,0,,product.product_category_hy
+product_template_85,Diaper,FALSE,TRUE,product,0,,product.product_category_hy
+product_template_86,Earplugs,FALSE,TRUE,product,10,,product.product_category_hy
+product_template_87,Hand Soap,FALSE,TRUE,product,20,,product.product_category_hy
+product_template_88,Mosquito Repellent,FALSE,TRUE,product,20,,product.product_category_hy
+product_template_89,Pacifier,FALSE,TRUE,product,20,,product.product_category_ba
+product_template_90,Razors,FALSE,TRUE,product,10,,product.product_category_hy
+product_template_91,Reusable Sanitary Pads,FALSE,TRUE,product,20,,product.product_category_hy
+product_template_92,Sanitary pads,FALSE,TRUE,product,0,,product.product_category_hy
+product_template_93,Sanitary towel ,FALSE,TRUE,product,10,,product.product_category_hy
+product_template_94,Shampoo ,FALSE,TRUE,product,40,,product.product_category_hy
+product_template_95,Shaving Cream,FALSE,TRUE,product,20,,product.product_category_hy
+product_template_96,Shower Gel,FALSE,TRUE,product,40,,product.product_category_hy
+product_template_97,Small Towels ,FALSE,TRUE,product,10,,product.product_category_ho
+product_template_98,Sun Lipstick,FALSE,TRUE,product,10,,product.product_category_hy
+product_template_99,Sunscreen,FALSE,TRUE,product,10,,product.product_category_hy
+product_template_100,Talcum Powder,FALSE,TRUE,product,20,,product.product_category_ba
+product_template_101,Toothbrush,FALSE,TRUE,product,30,,product.product_category_hy
+product_template_102,Toothpaste,FALSE,TRUE,product,30,,product.product_category_hy
+product_template_103,Wet Wipes,FALSE,TRUE,product,30,,product.product_category_hy
+product_template_105,Toy,FALSE,TRUE,product,5,,product.product_category_ho

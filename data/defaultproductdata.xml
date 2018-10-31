@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="first_course_item" model="product.template">
+      <field name="name">T-Shirt</field>
+    </record>
+  </data>
+</odoo>
