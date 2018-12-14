@@ -1,23 +1,25 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Boxwise Products Data",
+    'name': "Boxwise Warehouse Management",
 
     'summary': """
-    Load all products of Boxwise!
+    WMS for inkind-donations
         """,
 
     'author': "Humanilog",
     'website': "www.humanilog.org",
 
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '11.0.1.0.1',
 
-    'depends': ['stock'],
-
+    'depends': [
+	    'stock', 
+	    'stock_picking_barcode'
+    ],
     'data': [
-	    'data/product.template.csv',
-	    'data/product.category.csv',
-	    'data/product.attribute.csv',
-	    'data/product.attribute.value.csv',
+        'data/product.category.csv',
+        'data/product.template.csv',
+	'data/product.attribute.csv',
+	#'data/product.attribute.value.csv',
     ],
 }
