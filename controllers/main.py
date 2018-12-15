@@ -10,7 +10,7 @@ class LabelingController(http.Controller):
         })
 
     @http.route('/boxwise/labeling/<model("stock.quant.package"):package>/', auth='user')
-    def teacher(self, package):
+    def edit_package(self, package):
         return http.request.render('boxwise_WMS.edit_package', {
             'package': package
         })
