@@ -19,7 +19,7 @@
         'data/product.category.csv',
         'data/product.template.csv',
 	'data/product.attribute.csv',
-	 #'data/product.attribute.value.csv',
+	#'data/product.attribute.value.csv',
         'views/edit_package.xml',
         'views/labeling.xml',
         'data/res.partner.csv',
