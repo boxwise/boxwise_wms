@@ -22,5 +22,6 @@
 	#'data/product.attribute.value.csv',
         'views/edit_package.xml',
         'views/labeling.xml',
-    ]
+        'data/res.partner.csv'
+    ],
 }
