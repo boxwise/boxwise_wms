@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="edit_package">
+        <t t-call="web.html_container">
+            <t t-set="title">Boxwise - Edit Package</t>
+            <div class="container">
+                <h3 t-field="package.name"/>
+                Location: <span t-field="package.location_id"/>
+
+                <hr/>
+                <div class="table-responsive">
+                    <table class="o_list_view table table-condensed table-striped o_list_view_ungrouped">
+                        <thead>
+                            <tr>
+                                <th>Product</th><!-- TODO get the i18n field name-->
+                                <th style="text-align: right;">Quantity</th><!-- TODO get the i18n field name-->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="package.quant_ids" t-as="l">
+                                <tr class="o_data_row">
+                                    <td><span t-field="l.product_id"/></td>
+                                    <td><span t-field="l.quantity"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
