@@ -11,3 +11,5 @@ product_attribute_FSS,Female Shoe Sizes,TRUE
 product_attribute_MSS,Male Shoe Sizes,TRUE
 product_attribute_G,Gender,TRUE
 product_attribute_AG,Age_Group,TRUE
+product_attribute_CON,Condition,TRUE
+
