@@ -24,6 +24,7 @@
         'views/labeling.xml',
         'data/res.partner.csv',
         #'views/generate_qr.xml',
+        #'data/config.xml',
         'views/report_qr_codes.xml'
     ]
 }
