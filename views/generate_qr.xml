@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="generate_qr_view" model="ir.ui.view">
+        <field name="name">Generate QR</field>
+        <field name="model">stock.quant.package</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <form string="Generate QR codes">
+                <!-- from to put here -->
+            </form>
+        </field>
+    </record>
+
+    <record id="action_generate_qr" model="ir.actions.act_window">
+        <field name="name">Generate new QR codes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">stock.quant.package</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="generate_qr_view"/>
+    </record>
+
+    <menuitem id="menu_generate_qr" name="Generate QR codes" action="action_generate_qr" parent="stock.menu_stock_inventory_control" sequence="103" />
+</odoo>

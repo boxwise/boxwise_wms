@@ -23,7 +23,7 @@
         'views/edit_package.xml',
         'views/labeling.xml',
         'data/res.partner.csv',
-        #'views/generate_qr.xml',
+        'views/generate_qr.xml',
         'views/report_qr_codes.xml'
     ]
 }
