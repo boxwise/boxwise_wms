@@ -58,11 +58,11 @@ We are using the open source ERP system odoo as the base for Boxwise.
 
 1. Dev doc:
 https://www.odoo.com/documentation/11.0/index.html
-
-Especially
-2. Books:
+2. Dev doc about creating a module: 
+https://www.odoo.com/documentation/11.0/howtos/backend.html
+3. Books:
 https://drive.google.com/drive/folders/1AB18OISimJ5jewCBXJuTi6EDVwd84lXW
-3. odoo github
+4. odoo github
 https://github.com/odoo
 
 **And the odoo community:**
