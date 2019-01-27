@@ -14,7 +14,7 @@ Check out [our webpage](https://www.boxwise.co) for more information!
 
 We are always looking for help. Working on this project is an opportunity to use your skills to help thousands of refugees. [Our contributing guide](CONTRIBUTING.md) has more information.
 
-Please also check out our [Code of Conduct](CODE_OF_CONDUCT.md)
+Please also check out our [Code of Conduct](CODE_OF_CONDUCT.md)!
 
 ## Community
 
@@ -26,7 +26,7 @@ Please also check out our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 2.  Clone this folder into the [addons folder](https://github.com/humanilog/dev-setup/tree/11.0/addons) of your setup. **Please do NOT rename the repository!**
 
-    git clone https://github.com/boxwise/boxwise_wms.git
+    `git clone https://github.com/boxwise/boxwise_wms.git`
 
 3.  We recommend that you create your own database before you log in. There you can choose your own log in credentials and leave out the demo data of the default installation. 
 
