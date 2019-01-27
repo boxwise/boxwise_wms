@@ -8,7 +8,7 @@ in a fair and dignified way.
 
 This is a new version of [the original Drop App used by Drop In The Ocean](https://www.drapenihavet.no/en/the-drop-app-2/). The [original app](https://bitbucket.org/wishingtree/themarket/src/master/) was limited to just managing a single organization. This is a rewrite to support multiple organizations on a centrally hosted system.
 
-Check out [our webpage](www.boxwise.co) for more information!
+Check out [our webpage](https://www.boxwise.co) for more information!
 
 ## Contributing
 
