@@ -30,7 +30,7 @@ You can contribute in lots of ways that aren't code, too. For example:
 
 - [Join our Slack group and help people in the #support channel.](https://join.slack.com/t/boxwise/shared_invite/enQtMzE4NzExMjkxNTM2LTk0MzY2Mjg0MTY5ZmJjMjI1ODNmODZiNmJlNTAwM2Y4MmJkZDJjZWEyNzk0YTQyZGI0ZTYxMTc2NTgxNjk1ZTM).
 - Report bugs and feature suggestions in [our issue tracker](https://github.com/boxwise/boxwise/issues).
-- Spread the word! We are always on the lookout for contributors. Blog, tweet, all those things. We are on [facebook](www.fb.com/boxwise.co) and [LinkedIn](www.linkedin.de).
+- Spread the word! We are always on the lookout for contributors. Blog, tweet, all those things. We are on [facebook](www.facebook.com/pg/boxwise.co) and [LinkedIn](https://www.linkedin.com/company/12997513).
 - [Donate to our cause if you have some spare money lying around!](https://donate.boxwise.co)
 - [Get in touch!](mailto:hans@boxwise.co) If you want to give us your opinion or just generally offer your time to help us, feel always welcome to contact us!
 
@@ -38,7 +38,7 @@ You can contribute in lots of ways that aren't code, too. For example:
 
 We have a weekly online meeting of all active developers each Saturday. It starts usually at 9.30am CET with a short introduction for all newcomers. At 10 am everybody else can join. The first 60 to 90 min we discuss problems, prioritize / distribute tasks and make decisions. After the team meeting, we start directly with diving into our tasks. We usually keep our conference call open to be available for quick answers. If you need to leave at a certain stage, it is no problem at all. Just try to be at the team meeting.
 
-We use the [github issues](https://github.com/boxwise/boxwise_wms) and prioritize the tasks roughly with [milestones]((https://github.com/boxwise/boxwise_wms). If somebody hasn't already claimed a ticket, feel free to pick it up! It's probably worth adding a comment to say that you are working on something, in case somebody else wants to work on it too.
+We use the [github issues](https://github.com/boxwise/boxwise_wms/issues) and prioritize the tasks roughly with [milestones](https://github.com/boxwise/boxwise_wms/milestones). If somebody hasn't already claimed a ticket, feel free to pick it up! It's probably worth adding a comment to say that you are working on something, in case somebody else wants to work on it too.
 <!--
 We use [a GitHub project](https://github.com/boxwise/boxwise/projects/1) to keep track of what we want to build, and what is being worked on. The "To do" column is roughly priority sorted, so is a good place to find stuff that we consider high priority. -->
 
