@@ -17,7 +17,7 @@ For everything else, please read on...
 - **Be bold!** If there is something that needs fixing, go for it. We are always looking for help.
 - **Make sure your idea has support.** Before spending a lot of time on a feature, it's worth checking that it is wanted first. Ask around in Slack, or create a feature request issue to get feedback.
 - **Write tests, if you can.** We are a young project, so we move fast (and break things, unfortunately). But, if you have time, it is worth writing tests for your work. That way we can confirm that the code you are contributing does what you say it does, and we can ensure it doesn't break in the future.
-- **Follow the general odoo guidelines / coding styles** The current development is based on the open source project odoo. Parts of Boxwise will also be useful for the whole community. In order to help each other and easily release modules for the community, please follow the [odoo guidelines and coding styles](www.odoo-community.org/contributing)
+- **Follow the general odoo guidelines / coding styles** The current development is based on the open source project odoo. Parts of Boxwise will also be useful for the whole community. In order to help each other and easily release modules for the community, please follow the [odoo guidelines and coding styles](https://odoo-community.org/page/contributing).
 
 ## Making a contribution
 
