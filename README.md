@@ -53,11 +53,13 @@ The following steps are required if [Issue #13](https://github.com/boxwise/boxwi
 ## Useful Links
 
 We are using the open source ERP system odoo as the base for Boxwise. 
+
 **First, here are some links about odoo itself:**
 
 1. Dev doc:
 https://www.odoo.com/documentation/11.0/index.html
-Espeiall
+
+Especially
 2. Books:
 https://drive.google.com/drive/folders/1AB18OISimJ5jewCBXJuTi6EDVwd84lXW
 3. odoo github
