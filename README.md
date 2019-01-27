@@ -30,15 +30,14 @@ Please also check out our [Code of Conduct](CODE_OF_CONDUCT.md)!
 
 3.  We recommend that you create your own database before you log in. There you can choose your own log in credentials and leave out the demo data of the default installation. 
 
-    - Open up odoo, e.g. `localhost:8068`
+    - Open up odoo, e.g. `localhost:8069`
     - Click "Manage databases"
     - Click "Create Database"
 
 4. Activate the developer mode! There two ways:
 
-    1. add debug in the url --> `localhost:8069/web?debug#....` or
+    1. Add `debug` in the url --> `localhost:8069/web?debug#....` or
     2. Go to settings and click the link hidden beneath the credentials on the far right! 
-
 
 5.  Install the `boxwise_wms` module!
 
@@ -46,7 +45,6 @@ Please also check out our [Code of Conduct](CODE_OF_CONDUCT.md)!
     - Click in the left-hand menu `Update Apps List`!
     - Search for boxwise_wms! Remove the `Apps` filter from the search bar to see all custom modules available!
     - Click `Install`!
-    
     
 The following steps are required if [Issue #13](https://github.com/boxwise/boxwise_wms/issues/13) and [Issue #15](https://github.com/boxwise/boxwise_wms/issues/15) are not yet solved.
 
