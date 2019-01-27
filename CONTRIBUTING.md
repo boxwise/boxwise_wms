@@ -5,7 +5,7 @@ First off: **thank you**. You will be helping build software that distributes cl
 If you haven't done so already, [join the #dev channel in our Slack group](https://join.slack.com/t/boxwise/shared_invite/enQtMzE4NzExMjkxNTM2LTk0MzY2Mjg0MTY5ZmJjMjI1ODNmODZiNmJlNTAwM2Y4MmJkZDJjZWEyNzk0YTQyZGI0ZTYxMTc2NTgxNjk1ZTM). That is where all the people who build Boxwise are. It's a great place to ask questions.
 A couple of quick things:
 
-- **Saturday is Boxwise Day!** We meet online each Saturday at 10am CET. Check out the [#dev channel]((https://join.slack.com/t/boxwise/shared_invite/enQtMzE4NzExMjkxNTM2LTk0MzY2Mjg0MTY5ZmJjMjI1ODNmODZiNmJlNTAwM2Y4MmJkZDJjZWEyNzk0YTQyZGI0ZTYxMTc2NTgxNjk1ZTM)) for more details.
+- **Saturday is Boxwise Day!** We meet online each Saturday at 10am CET. Check out the [slack #dev channel]((https://join.slack.com/t/boxwise/shared_invite/enQtMzE4NzExMjkxNTM2LTk0MzY2Mjg0MTY5ZmJjMjI1ODNmODZiNmJlNTAwM2Y4MmJkZDJjZWEyNzk0YTQyZGI0ZTYxMTc2NTgxNjk1ZTM)) for more details.
 - **Do you need help using Boxwise?** [Join our Slack group and ask in the #support channel.](https://join.slack.com/t/boxwise/shared_invite/enQtMzE4NzExMjkxNTM2LTk0MzY2Mjg0MTY5ZmJjMjI1ODNmODZiNmJlNTAwM2Y4MmJkZDJjZWEyNzk0YTQyZGI0ZTYxMTc2NTgxNjk1ZTM) A GitHub issue is probably not the best place for this.
 - **Have you found a bug, or got an idea for a feature?** [File it in our issue tracker.](https://github.com/boxwise/boxwise/issues/new) Use the search box to make sure nobody has filed it already, please.
 
