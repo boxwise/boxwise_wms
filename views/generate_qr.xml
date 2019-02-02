@@ -1,25 +1,30 @@
 <?xml version="1.0"?>
 <odoo>
+    <!-- <field name="model">stock.quant.package</field> -->
     <record id="generate_qr_view" model="ir.ui.view">
         <field name="name">Generate QR</field>
-        <field name="model">stock.quant.package</field>
+        <field name="model">boxwise.qr.generate.wizard</field>
         <field name="priority">1</field>
         <field name="arch" type="xml">
-            <form string="Generate QR codes">
-                <!-- from to put here -->
+            <form>
+                <group>
+                    <field name="number" /> 
+                    <field name="create_uids" widget="many2many_tags" /><!-- creates multiselect dropdown list -->
+                    <field name="make_big_labels" />
+                </group>
+                <footer>
+                    <button name="mass_generate" type="object" string="Generate" class="oe_highlight"
+                            attrs="{'invisible':[('number','=',False),('create_uids', '=',False)]}"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
             </form>
         </field>
     </record>
 
-    <record id="action_generate_qr" model="ir.actions.act_window">
-        <field name="name">Generate new QR codes</field>
-        <field name="type">ir.actions.act_window</field>
-        <field name="res_model">stock.quant.package</field>
-        <field name="view_type">form</field>
-        <field name="view_mode">form</field>
-        <field name="target">new</field>
-        <field name="view_id" ref="generate_qr_view"/>
-    </record>
+    <!-- target="new" attribute makes it open as a dialog window -->
+    <act_window id="action_generate_qr" name="Generate new QR codes" src_model="boxwise.qr.generate.wizard" 
+                res_model="boxwise.qr.generate.wizard" view_type = "form" target="new" 
+                view_id = "generate_qr_view"/>
 
     <menuitem id="menu_generate_qr" name="Generate QR codes" action="action_generate_qr" parent="stock.menu_stock_inventory_control" sequence="103" />
 </odoo>
