@@ -20,6 +20,7 @@
         'data/product.template.csv',
 	    'data/product.attribute.csv',
 	    'data/product.attribute.value.csv',
+	    'views/packages.xml',
         'views/edit_package.xml',
         'views/labeling.xml',
         'data/res.partner.csv',
