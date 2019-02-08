@@ -13,7 +13,7 @@
                         <thead>
                             <tr>
                                 <th>Product</th><!-- TODO get the i18n field name-->
-                                <th style="text-align: right;">Quantity</th><!-- TODO get the i18n field name-->
+                                <th>Quantity</th><!-- TODO get the i18n field name-->
                             </tr>
                         </thead>
                         <tbody>
