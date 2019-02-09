@@ -13,12 +13,12 @@ class GenerateQRCountWizard(models.TransientModel):
     def mass_generate(self):
         _logger.debug('Starting batch QR codes generation')
 
-        packageModel = self.env['stock.quant.package']
+        package_model = self.env['stock.quant.package']
         number_of_packages = int(self.number)
-        createdPackages = []
+        created_packages = []  #TODO: pass these into the automatically downloaded report
 
         for _ in range(number_of_packages):
-            createdPackages.append(packageModel.create({}))
+            created_packages.append(package_model.create({}))
 
         return self.open_packages_list()
         
