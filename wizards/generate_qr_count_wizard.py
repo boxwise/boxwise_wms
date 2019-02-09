@@ -4,7 +4,8 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class GenerateQRCountWizard(models.TransientModel):
+# Wizard used to get input from user to generate set number of packages
+class GenerateQrInBulk(models.TransientModel):
     _name = 'boxwise_wms.qr.generate.wizard'
     _description = 'Number of QR codes to be generated'
     number = fields.Char(string='Number of labels', required=True, default=0)
@@ -20,6 +21,7 @@ class GenerateQRCountWizard(models.TransientModel):
         for _ in range(number_of_packages):
             created_packages.append(package_model.create({}))
 
+        _logger.debug('Successfully generated %s new packages', self.number, exc_info=1)
         return self.open_packages_list()
         
     def open_packages_list(self):
