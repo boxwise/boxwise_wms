@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-	<data>
-	<record model="res.config.settings" id="res.config.settings">
-		<field name="group_product_variant"> True </field>
-		<field name="group_stock_packaging"> True </field>
-	</record>
-	</data>
-</odoo>
