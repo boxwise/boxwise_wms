@@ -83,6 +83,7 @@ https://github.com/OCA/maintainer-tools/wiki
 https://github.com/OCA/maintainer-tools/tree/master/template/module
 
 **The odoo JS framework:**
+
 1. Introduction video from odoo conference:
 https://www.youtube.com/watch?v=H-iFhOh1tOE
 2. JS Dev Doc:
