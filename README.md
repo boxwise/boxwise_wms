@@ -64,6 +64,8 @@ https://www.odoo.com/documentation/11.0/howtos/backend.html
 https://drive.google.com/drive/folders/1AB18OISimJ5jewCBXJuTi6EDVwd84lXW
 4. odoo github
 https://github.com/odoo
+5. odoo code search to find all official modules
+http://odoo-code-search.com/
 
 **And the odoo community:**
 
@@ -77,3 +79,15 @@ https://github.com/OCA
 https://github.com/OCA/maintainer-tools
 5. OCA maintainer tools wiki
 https://github.com/OCA/maintainer-tools/wiki
+6. OCA module template
+https://github.com/OCA/maintainer-tools/tree/master/template/module
+
+**The odoo JS framework:**
+1. Introduction video from odoo conference:
+https://www.youtube.com/watch?v=H-iFhOh1tOE
+2. JS Dev Doc:
+https://www.odoo.com/documentation/11.0/reference/javascript_reference.html
+3. JS Command Index:
+https://www.odoo.com/documentation/11.0/reference/javascript_api.html
+4. JS Quick ref:
+https://www.odoo.com/documentation/11.0/reference/javascript_cheatsheet.html 
