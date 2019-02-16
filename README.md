@@ -22,7 +22,7 @@ Please also check out our [Code of Conduct](CODE_OF_CONDUCT.md)!
 
 ## Setting up development environment
 
-1.  Install odoo v11. Together with our partner humanilog, we created [a general dev-setup](https://github.com/humanilog/dev-setup). You have to have [docker](https://docs.docker.com/install/) installed for this dev-setup.
+1.  Install odoo v11. We created [a Boxwise dev-setup](https://github.com/boxwise/boxwise-doodba). It is based on a docker environment for development and production of odoo by Tecnativa. It should just be 5 commands and you are ready to go. You have to have [docker](https://docs.docker.com/install/) installed for this dev-setup.
 
 2.  Clone this folder into the [addons folder](https://github.com/humanilog/dev-setup/tree/11.0/addons) of your setup. **Please do NOT rename the repository!**
 
