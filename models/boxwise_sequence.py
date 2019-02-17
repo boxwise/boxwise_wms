@@ -25,15 +25,13 @@ class CustomPackageSequence(models.Model):
             return super(CustomPackageSequence, self)._next() #fallback to superclass sequence logic
 
     def generate_random_id(self):
-        wdb.set_trace()
         tries = 0
         max_tries = 50
         while tries < max_tries:
-            rnd = random.SystemRandom()
-            employee_id = ''.join(rnd.choice(string.digits) for _ in range(8))
-            if not self.search_count([('name','=',employee_id)]):
+            package_number = ''.join(random.SystemRandom().choice(string.digits) for _ in range(8))
+            if not self.env['stock.quant.package'].search_count([('display_name','=',package_number)]):
                 break
             tries += 1
         if tries == max_tries:
             raise UserWarning(_('Unable to generate an Employee ID number that is unique.'))
-        return employee_id
+        return package_number
