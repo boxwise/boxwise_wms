@@ -1,0 +1,2 @@
+id,name,product_id/id,location_dest_id/id,location_id/id,product_uom/id,product_uom_qty
+move_test2,Move test,product_product_test6,stock.stock_location_stock,stock.stock_location_suppliers,product.product_uom_unit,10

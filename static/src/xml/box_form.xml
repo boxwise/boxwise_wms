@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <t t-name="box_select_field">
+        <div />
+        <t t-if="widget.visible">
+            <div class="form-group ">
+                <label t-att-for="widget.id">
+                    <t t-esc="widget.name" />
+                </label>
+                <select t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
+                    <!-- <option value="0">
+                        <t t-esc="widget.placeholder" />
+                    </option> -->
+                    <t t-foreach="widget.iterator" t-as="iterator">
+                        <t t-if="widget.selected == iterator.id">
+                            <option t-att-value="iterator.id" selected="True">
+                                <t t-esc="iterator.name"/>
+                            </option>
+                        </t>
+                        <t t-else="">
+                            <option t-att-value="iterator.id">
+                                <t t-esc="iterator.name"/>
+                            </option>
+                        </t>
+                    </t>
+                </select>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="box_attribute_group">
+        <div />
+        <t t-if="widget.visible">
+            <t t-foreach="widget.selectFields" t-as="widget">
+                <t t-call="box_select_field" />
+            </t>
+        </t>
+    </t>
+
+    <t t-name="box_form_end">
+        <div />
+        <t t-if="widget.visible">
+            <div class="form-group">
+                <input type="number" name="items" pattern="\d*" placeholder="Number of items" class="form-control" min="1" required="True" aria-required="true" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="comments" placeholder="Comments for this box" value="" class="form-control" />
+            </div>
+            <!-- Submit button -->
+            <div class="form-group">
+                <button class="btn btn-primary o_box_form_submit">
+                    Save
+                </button>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="box_form">
+        <form action="/box/submit" method="POST">
+            <div class='o_select_category' />
+            <div class='o_select_subcategory' />
+            <div class='o_select_product' />
+            <div class='o_select_attributes' />
+            <div class='o_end_of_form' />
+        </form>
+    </t>
+</odoo>
