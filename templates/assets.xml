@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright <YEAR(S)> <AUTHOR(S)>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+
+    <template id="assets_frontend" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/boxwise_wms/static/src/css/boxwise.css" />
+        </xpath>
+    </template>
+
+
+    <template id="box_form_assets" name="Assets for the Box Form" inherit_id="web.assets_frontend" primary="True">
+        <xpath expr="." position="inside">
+            <script type="text/javascript"
+                src="/boxwise_wms/static/src/js/models.js"/>
+            <script type="text/javascript"
+                src="/boxwise_wms/static/src/js/box_form.js"/>
+        </xpath>
+    </template>
+
+</odoo>
