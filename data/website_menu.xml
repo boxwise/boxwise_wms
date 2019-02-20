@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <delete model="website.menu" id="website.menu_homepage" />
+        <delete model="website.menu" id="website.menu_contactus" />
+        <record id="website.main_menu" model="website.menu">
+            <field name="user_logged">True</field>
+            <field name="user_not_logged">False</field>
+        </record>
+        <record id="menu_findabox" model="website.menu">
+            <field name="name">Find a Box</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="url">/findbox</field>
+            <field name="is_visible">True</field>
+            <field name="user_logged">True</field>
+            <field name="user_not_logged">False</field>
+        </record>
+        <record id="menu_howto" model="website.menu">
+            <field name="name">HowTo boxwise</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="new_window">True</field>
+            <field name="url">https://www.youtube.com/channel/UCIrY9bskqUpDWeF8nyn6wvg</field>
+            <field name="is_visible">True</field>
+            <field name="user_logged">True</field>
+            <field name="user_not_logged">False</field>
+        </record>
+        <record id="menu_about" model="website.menu">
+            <field name="name">About Boxwise</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="new_window">True</field>
+            <field name="url">https://www.boxwise.co</field>
+            <field name="is_visible">True</field>
+            <field name="user_logged">True</field>
+            <field name="user_not_logged">False</field>
+        </record>
+    </data>
+</odoo>
