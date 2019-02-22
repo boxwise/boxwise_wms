@@ -37,5 +37,4 @@
         # 'demo/stock.move.csv',
         # 'demo/stock.picking.csv'
     ],
-
 }
