@@ -1,19 +1,19 @@
 
-.qrcode-report {
+.qrcode-report, .qrcode-report-alt {
 
     .product-categories {
-        font-weight: bold; 
-        font-size: 18px; 
+        font-weight: bold;
+        font-size: 18px;
 
-        .product-category { 
-            margin-bottom: 20px; 
+        .product-category {
+            margin-bottom: 20px;
         }
-        .product-category:first-child { 
-            margin-top: 0; 
+        .product-category:first-child {
+            margin-top: 0;
         }
         .sep { margin-left: 6px; margin-right: 6px; }
     }
-    
+
     .delete-required { font-weight: normal; font-size: 12px; }
 
     .box-number {
@@ -21,15 +21,26 @@
         font-weight: bold;
         margin-top: 15px;
     }
-    
+
     .package { padding: 40px 20px; }
 
     .qrcode img { width: 200px; height: 200px; }
-    .qrcode { 
+    .qrcode {
         margin: -18px 0 -18px -18px; /* remove the whitespace from the image so we have more control over layout */
     }
     .identifier { padding: 0; }
 
     .product-attr { border-top: 1px solid; margin-top: 100px; font-weight: bold;}
+
+}
+.qrcode-report-alt {
+
+    .product-categories {
+        .product-category-alt {
+            margin-top: 42px;
+        }
+    }
+
+    .product-attr-secondary { border-top: 1px solid; margin-top: 60px; font-weight: bold;}
 
 }

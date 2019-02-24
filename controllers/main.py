@@ -7,6 +7,7 @@ import werkzeug
 from odoo.addons.http_routing.models.ir_http import slug
 
 class LabelingController(http.Controller):
+
     @http.route('/findbox', type='http', auth='user', website=True)
     def find_package(self, **kw):
         #wdb.set_trace()

@@ -1,23 +1,22 @@
 <!--
 this report can be accessed via
 
-http://localhost:11069/report/html/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,10
+http://localhost:11069/report/html/boxwise_wms.report_qr_codes_alt_template/1,2,3,4,5,6,7,8,9,10
 
-http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,10
+http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes_alt_template/1,2,3,4,5,6,7,8,9,10
 
 
  -->
 <odoo>
     <data>
+        <report id="print_qr_codes_alt" name="boxwise_wms.report_qr_codes_alt_template" model="stock.quant.package" string="QR codes (alt layout)" report_type="qweb-pdf"
+        file="boxwise_wms.report_qr_codes_alt_template" menu="True" paperformat="boxwise_wms.paperformat_euro_landscape"  />
 
-        <report id="print_qr_codes" name="boxwise_wms.report_qr_codes_template" model="stock.quant.package" string="QR codes" report_type="qweb-pdf"
-        file="boxwise_wms.report_qr_codes_template" menu="True" paperformat="boxwise_wms.paperformat_euro_landscape"  />
-
-        <template id="report_qr_codes_template">
+        <template id="report_qr_codes_alt_template">
             <t t-call="web.basic_layout">
                 <div class="">
                     <t t-foreach="docs" t-as="doc">
-                        <div class="col-xs-6 qrcode-report">
+                        <div class="col-xs-6 qrcode-report-alt">
                             <div class="package">
                                 <div class="row product-categories">
                                     <div class="col-xs-8">
@@ -30,9 +29,7 @@ http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,
                                         <div class="product-category">
                                             ADULT <span class="sep">/</span> CHILD <span class="sep">/</span> BABY
                                         </div>
-                                        <div class="product-category">
-                                            MALE <span class="sep">/</span> FEMALE <span class="sep">/</span> UNISEX
-                                        </div>
+
                                         <div class="delete-required">(delete as required)</div>
                                     </div>
                                     <div class="col-xs-4">
@@ -46,14 +43,22 @@ http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,
                                             <div># of items</div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-8">
+                                    <div class="col-xs-10">
                                         <div class="product-attr">
                                             <div>Product name</div>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="row">
                                     <div class="col-xs-2">
-                                        <div class="product-attr">
+                                        <div class="product-attr-secondary">
                                             <div>Size</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-10 product-categories">
+                                        <div class="product-category-alt">
+                                            MALE <span class="sep">/</span> FEMALE <span class="sep">/</span> UNISEX
                                         </div>
                                     </div>
                                 </div>

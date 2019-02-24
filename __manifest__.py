@@ -30,6 +30,7 @@
         'views/show_package.xml',
         'views/generate_qr.xml',
         'views/report_qr_codes.xml',
+        'views/report_qr_codes_alt.xml',
         'templates/layout.xml',
         'templates/assets.xml',
         # demo data
