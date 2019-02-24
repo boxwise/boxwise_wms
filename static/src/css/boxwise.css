@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: Open Sans;
+    color: #000000;
+    line-height: 137.5%;
+    background-image: url("/boxwise_wms/static/src/img/empty-craft-paper.jpg");
+    background-color: #f0eef1;
+}
+
+a {
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: Open Sans;
+    font-weight: bold;
+    color: #000000;
+}
+h2 {
+    margin: 1.6rem 0 1.6rem 0;
+}
+
+.btn {
+    width:100%;
+    border-radius: 0.125rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.btn-primary {
+    background-color: #009dad;
+    border-color: #009dad;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #007d8a;
+    border-color: #007d8a;
+}
+
+/* navbar */
+.navbar-header {
+    background: #f0eef1; /*rgba(255,255,255,.8);*/
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    align-items: center;
+}
+.navbar-toggle {
+    border: 0;
+    border-radius: 0;
+}
+
+/* not working yet
+.navbar-light .navbar-nav .nav-link{
+    color: #009DAD;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #009DAD;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+    color: #009DAD;
+}
+.dropdown-menu{
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+.dropdown-item:focus,.dropdown-item:active, .dropdown-item:hover{
+    background-color: #009DAD;
+    color: #fff;
+}
+
+@media (min-width:768px) {
+    .dropdown-menu{
+        background-color: #009DAD;
+    }
+    .dropdown-item {
+        color: #F0EEF1;
+    }
+    .dropdown-item:focus,.dropdown-item:active, .dropdown-item:hover{
+        background-color: #F0EEF1;
+        color: #009DAD;
+    }
+} */
+
+header a.navbar-brand.logo img {
+    width: auto;
+    height: 1.825rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.form-control {
+    background-color: #f0eef1;
+}
+
+footer {
+    background-color: #f0eef1;
+}
+
+.navbar-default {
+    background-color: #f0eef1;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+.navbar-default .navbar-nav > .active > a {
+    color: #000000;
+}
+.dropdown-menu {
+    background-color: #f0eef1;
+}
+a.list-group-item,
+button.list-group-item {
+    color: #000000;
+    background-color: #f0eef1;
+}
+
+.cardish-thingie {
+    background-color: #f0eef1;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.card-row {
+    padding: 1rem 0 1rem 0;
+}
+
+section{
+    margin:1rem 0 1rem 0;
+}
+
+.some-group{
+    margin:1rem 0 1rem 0;
+}

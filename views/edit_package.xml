@@ -1,32 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="edit_package">
-        <t t-call="web.html_container">
-            <t t-set="title">Boxwise - Edit Package</t>
-            <div class="container">
-                <h3 t-field="package.name"/>
-                Location: <span t-field="package.location_id"/>
+        <t t-call="website.layout">
+            <t t-set="head">
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css" />
 
-                <hr/>
-                <div class="table-responsive">
-                    <table class="o_list_view table table-condensed table-striped o_list_view_ungrouped">
-                        <thead>
-                            <tr>
-                                <th>Product</th><!-- TODO get the i18n field name-->
-                                <th>Quantity</th><!-- TODO get the i18n field name-->
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <t t-foreach="package.quant_ids" t-as="l">
-                                <tr class="o_data_row">
-                                    <td><span t-field="l.product_id"/></td>
-                                    <td><span t-field="l.quantity"/></td>
-                                </tr>
+                <t t-call-assets="boxwise_wms.box_form_assets" t-css="false"/>
+                <script type="text/javascript">
+                    odoo.session_info = {
+                    user_id:
+                    <t t-esc="json.dumps(request.env.user.id)"/>
+                    };
+                </script>
+
+            </t>
+            <section class="s_title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <t t-if="package.move_line_ids">
+                                <h2>Edit Box</h2>
+                                <h3 t-field="package.name" />
                             </t>
-                        </tbody>
-                    </table>
+                            <t t-else="">
+                                <h2>Make a new Box</h2>
+                                ToDo:
+                                <ul>
+                                    <li>Remove saleable</li>
+                                    <li>Variants are not shown yet.</li>
+                                    <li>Change select2 field for Bootstrap 3</li>
+                                    <li>load data when box is filled.</li>
+                                    <li>UI Design</li>
+                                </ul>
+                            </t>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section class="s_form">
+                <div class="container">
+                    <div class="o_box_form" />
+                </div>
+            </section>
         </t>
     </template>
 </odoo>
