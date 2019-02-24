@@ -2,9 +2,7 @@
 {
     'name': "Boxwise Warehouse Management",
 
-    'summary': """
-    WMS for inkind-donations
-        """,
+    'summary': "WMS for inkind-donations",
 
     'author': "Humanilog",
     'website': "www.humanilog.org",
@@ -13,6 +11,7 @@
     'version': '11.0.1.0.5',
 
     'depends': ['stock', 'website_menu_by_user_status'],
+
     'data': [
         'data/product.category.csv',
         'data/product_category.xml',
