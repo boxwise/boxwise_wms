@@ -3,7 +3,11 @@ from odoo import http
 import wdb
 
 
+import werkzeug
+from odoo.addons.http_routing.models.ir_http import slug
+
 class LabelingController(http.Controller):
+
     @http.route('/findbox', type='http', auth='user', website=True)
     def find_package(self, **kw):
         #wdb.set_trace()
@@ -31,3 +35,8 @@ class LabelingController(http.Controller):
         return http.request.render('boxwise_wms.edit_package', {
             'package': package
         })
+
+    @http.route('/qrcode/<tenant>/<model("stock.quant.package"):package>/', auth='user')
+    def qrcode(self, tenant, package):
+        return werkzeug.utils.redirect('/boxwise/labeling/%s' % slug(package))
+
