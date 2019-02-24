@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record model="res.config.settings" id="res_config_settings_boxwise">
+            <field name="group_sale_delivery_address" eval="1"/>
+            <field name="has_google_analytics" eval="1"/>
+            <field name="google_analytics_key" eval="'UA-135092361-2'"/>
+        </record>
+
+        <function model="res.config.settings" name="execute">
+            <!-- ids = -->        <value eval="[ref('res_config_settings_boxwise')]"/>
+            <!-- context = -->    <value eval="{}"/>
+        </function>
+    </data>
+</odoo>

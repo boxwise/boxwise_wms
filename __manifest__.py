@@ -23,6 +23,7 @@
         'data/res.partner.csv',
         'data/website_menu.xml',
         'data/website_page.xml',
+        'data/website_settings.xml',
         # 'data/website_redirect.xml',
         'data/user_groups.xml',
         'views/packages.xml',

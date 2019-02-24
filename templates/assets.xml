@@ -6,6 +6,17 @@
     <template id="assets_frontend" inherit_id="web.assets_frontend">
         <xpath expr="." position="inside">
             <link rel="stylesheet" href="/boxwise_wms/static/src/css/boxwise.css" />
+            <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-135092361-2"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'UA-135092361-2', {
+                    'anonymize_ip': true
+                });
+            </script>
         </xpath>
     </template>
 
