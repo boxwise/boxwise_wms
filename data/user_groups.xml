@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+     <record id="coordinator_group" model="res.groups">
+        <field name="name">Coordinator</field>
+    </record>
+    <record id="volunteer_group" model="res.groups">
+        <field name="name">Volunteer</field>
+    </record>
+    <record id="show_all_menus_group" model="res.groups">
+        <field name="name">Show all menus</field>
+    </record>
+
+    <!-- Inventory/Master Data/Reordering -->
+    <record model="ir.ui.menu" id="stock.menu_reordering_rules_config">
+        <field name="groups_id" eval="[(6,0,[ref('boxwise_wms.show_all_menus_group')])]"/>  <!-- replace the list of linked IDs to this menu with only administrators -->
+    </record>
+
+    <!-- Inventory/Dashboard operations -->
+    <record model="ir.ui.menu" id="stock.menu_stock_warehouse_mgmt">
+        <field name="groups_id" eval="[(6,0,[ref('boxwise_wms.show_all_menus_group')])]"/>
+    </record>
+
+    <!-- Inventory/Configurations -->
+    <record model="ir.ui.menu" id="stock.menu_stock_config_settings">
+        <field name="groups_id" eval="[(6,0,[ref('boxwise_wms.show_all_menus_group')])]"/>
+    </record>
+
+    <!-- Discuss -->
+    <record model="ir.ui.menu" id="mail.mail_channel_menu_root_chat">
+        <field name="groups_id" eval="[(6,0,[ref('boxwise_wms.show_all_menus_group')])]"/>
+    </record>
+
+    <!-- Website -->
+    <record model="ir.ui.menu" id="website.menu_website_configuration">
+        <field name="groups_id" eval="[(6,0,[ref('boxwise_wms.show_all_menus_group')])]"/>
+    </record>
+
+    <!-- Apps -->
+    <record model="ir.ui.menu" id="base.menu_management">
+        <field name="groups_id" eval="[(6,0,[ref('boxwise_wms.show_all_menus_group')])]"/>
+    </record>
+
+    <!-- Settings -->
+    <!-- <record model="ir.ui.menu" id="base.menu_administration">
+        <field name="groups_id" eval="[(6,0,[ref('boxwise_wms.administrator_group')])]"/>
+    </record> -->
+  </data>
+</odoo>
