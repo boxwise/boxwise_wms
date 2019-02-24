@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <report id="print_qr_codes" model="stock.quant.package" string="QR-codes" report_type="qweb-pdf" name="boxwise_wms.report_qr_codes" 
-        file="boxwise_wms.report_qr_codes" menu="True"  />
+        file="boxwise_wms.report_qr_codes" menu="True" paperformat="boxwise_wms.paperformat_euro_landscape" />
 
         <template id="report_qr_codes">
             <t t-call="web.html_container">

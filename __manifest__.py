@@ -20,6 +20,7 @@
         'data/product.attribute.value.csv',
         'data/product.template.csv',
         'data/main_partner.xml',
+        'data/report.paperformat.csv',
         'data/res.partner.csv',
         'data/website_menu.xml',
         'data/website_page.xml',
