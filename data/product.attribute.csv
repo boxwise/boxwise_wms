@@ -1,15 +1,4 @@
 id,name,create_variant
-product_attribute_BbA,Baby by Age,TRUE
-product_attribute_BS,Bra Sizes,TRUE
-product_attribute_CbA,Children by Age,TRUE
-product_attribute_DS,Diaper Sizes,TRUE
-product_attribute_MS,Mixed Sizes,FALSE
-product_attribute_O,Onesize,FALSE
-product_attribute_CS,Clothing Sizes,TRUE
-product_attribute_CSS,Children Shoe Sizes,TRUE
-product_attribute_FSS,Female Shoe Sizes,TRUE
-product_attribute_MSS,Male Shoe Sizes,TRUE
-product_attribute_G,Gender,TRUE
-product_attribute_AG,Age_Group,TRUE
-product_attribute_CON,Condition,TRUE
-
+boxwise_wms.product_attribute_size,Size,TRUE
+boxwise_wms.product_attribute_gender,Gender,TRUE
+boxwise_wms.product_attribute_shoesize,Shoe size,TRUE
