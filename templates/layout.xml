@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="boxwise_footer" inherit_id="website.footer_custom" name="Boxwise Footer">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div class="container">
+                <a href="https://donate.boxwise.co" class="pull-left" style="margin-top:10px">
+                    Support us!
+                </a>
+                <h4 class="pull-right">
+                    <a t-attf-href="mailto:{{res_company.email}}">
+                        <i class="fa fa-envelope"/>
+                    </a>
+                    <!-- <a href="https://www.facebook.com/boxwise.co">
+                        <i class="fa fa-facebook-square"/>
+                    </a>
+                    <a href="https://github.com/boxwise">
+                        <i class="fa fa-github"/>
+                    </a>
+                    <a href="https://www.linkedin.com/company/boxwiseco/">
+                        <i class="fa fa-linkedin"/>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCIrY9bskqUpDWeF8nyn6wvg">
+                        <i class="fa fa-youtube-play"/>
+                    </a> -->
+                    <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                        <i class="fa fa-facebook-square"/>
+                    </a>
+                    <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                        <i class="fa fa-twitter"/>
+                    </a>
+                    <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                        <i class="fa fa-linkedin"/>
+                    </a>
+                    <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                        <i class="fa fa-youtube-play"/>
+                    </a>
+                    <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                        <i class="fa fa-google-plus-square"/>
+                    </a>
+                    <a t-att-href="website.social_github" t-if="website.social_github">
+                        <i class="fa fa-github"/>
+                    </a>
+                </h4>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Delete Copyright footer -->
+    <record model="ir.ui.view" id="layout_footer_copyright_invisible">
+        <field name="name">Make copyright footer invisible</field>
+        <field name="inherit_id" ref="website.layout_footer_copyright"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//div[@class='container mt16 mb8']" position="replace">
+                    <div />
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="base.main_company" model="res.company">
+            <field name="name">Boxwise</field>
+            <field name="partner_id" ref="base.main_partner"/>
+            <field name="logo" type="base64" file="boxwise_wms/static/src/img/boxwise_logo.png"/>
+            <field name="logo_web" type="base64" file="boxwise_wms/static/src/img/boxwise_logo.png"/>
+            <field name="email">hans@boxwise.co</field>
+            <field name="website">www.boxwise.co</field>
+            <field name="social_github">https://github.com/boxwise</field>
+            <field name="social_facebook">https://www.facebook.com/boxwise.co</field>
+            <field name="social_linkedin">https://www.linkedin.com/company/boxwiseco/</field>
+            <field name="social_youtube">https://www.youtube.com/channel/UCIrY9bskqUpDWeF8nyn6wvg</field>
+        </record>
+    </data>
+</odoo>
