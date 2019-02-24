@@ -1,22 +1,69 @@
+<!--
+this report can be accessed via
+
+http://localhost:11069/report/html/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,10
+
+http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,10
+
+
+ -->
 <odoo>
     <data>
-        <report id="print_qr_codes" model="stock.quant.package" string="QR-codes" report_type="qweb-pdf" name="boxwise_wms.report_qr_codes" 
-        file="boxwise_wms.report_qr_codes" menu="True" paperformat="boxwise_wms.paperformat_euro_landscape" />
 
+        <report id="print_qr_codes" model="stock.quant.package" string="QR-codes" report_type="qweb-pdf" name="boxwise_wms.report_qr_codes"
+        file="boxwise_wms.report_qr_codes" menu="True" paperformat="boxwise_wms.paperformat_euro_landscape"  />
         <template id="report_qr_codes">
-            <t t-call="web.html_container">
             <t t-call="web.basic_layout">
-                <div class="page">
-                    <div class="row">
-                        <t t-foreach="docs" t-as="doc">
-                            <div class="col-xs-3 text-center">
-                                <img width="200" height="200" t-att-src="'/report/barcode?type=QR&amp;value=%s' % ('https%3A%2F%2Fapp.boxwise.co%2Fqrcode%2Fpampiraiki%2F' + slug(doc) + '%2F')"/>
-                                <p><span t-field="doc.name" /></p>
+                <div class="">
+                    <t t-foreach="docs" t-as="doc">
+                        <div class="col-xs-6 qrcode-report">
+                            <div class="package">
+                                <div class="row product-categories">
+                                    <div class="col-xs-8">
+                                        <div class="product-category">
+                                            CLOTHING <span class="sep">/</span> SHOES <span class="sep">/</span> BEDDING <span class="sep">/</span> OTHER
+                                        </div>
+                                        <div class="product-category">
+                                            WINTER <span class="sep">/</span> SUMMER <span class="sep">/</span> ALL SEASON
+                                        </div>
+                                        <div class="product-category">
+                                            ADULT <span class="sep">/</span> CHILD <span class="sep">/</span> BABY
+                                        </div>
+                                        <div class="product-category">
+                                            MALE <span class="sep">/</span> FEMALE <span class="sep">/</span> UNISEX
+                                        </div>
+                                        <div class="delete-required">(delete as required)</div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <div class="qrcode"><img t-att-src="'/report/barcode?type=QR&amp;width=200&amp;height=200&amp;value=%s' % ('https%3A%2F%2Fapp.boxwise.co%2Fqrcode%2Fpampiraiki%2F' + slug(doc) + '%2F')"/></div>
+                                        <div class="box-number">#<span t-field="doc.name" /></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <div class="product-attr">
+                                            <div># of items</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="product-attr">
+                                            <div>Product name</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div class="product-attr">
+                                            <div>Size</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <!-- page break on every 4 items -->
+                        <t t-if="(doc_index + 1) % 4 == 0">
+                            <div class="clearfix" style="page-break-after:always;"> </div>
                         </t>
-                    </div>
+                    </t>
                 </div>
-            </t>
             </t>
         </template>
     </data>
