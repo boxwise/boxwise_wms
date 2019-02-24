@@ -14,12 +14,17 @@
                 </section>
                 <section class="s_list">
                     <t t-if="empty_packages">
-                        <h4>
-                            Labels ready to use (empty boxes)
-                        </h4>
-                        <p>
-                            ToDo: Remove when the scanning works!
-                        </p>
+                        <form method="POST" action="/box/reprint/">
+
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token(None)"/>
+                            <input type="submit" value="Re-print labels" />
+                        </form>
+                        <form method="POST" action="/box/generate/">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token(None)"/>
+                            <label for="count">count</label><input type="textbox" name="count" value="20"/>
+                            <input type="submit" value="Generate labels" />
+                        </form>
+                        <!--
                         <div class="list-group">
                             <t t-foreach="empty_packages" t-as="package">
                                 <a class="list-group-item list-group-item-action" t-attf-href="/box/edit/{{ slug(package) }}">
@@ -27,6 +32,7 @@
                                 </a>
                             </t>
                         </div>
+                         -->
                     </t>
                     <h4>
                         All Boxes

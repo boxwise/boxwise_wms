@@ -40,3 +40,33 @@ class LabelingController(http.Controller):
     def qrcode(self, tenant, package):
         return werkzeug.utils.redirect('/boxwise/labeling/%s' % slug(package))
 
+    @http.route('/box/generate/', auth='user', methods=['POST'])
+    def generate(self, count):
+
+        package_model = http.request.env['stock.quant.package']
+        docids = []
+        for _ in range(int(count)):
+            docids.append(package_model.create({}).id)
+
+        return self._generate_qrcodes_report(docids)
+
+    @http.route('/box/reprint/', auth='user', methods=['POST'])
+    def reprint(self):
+
+        packages = http.request.env['stock.quant.package'].search([])
+        docids = []
+        for pack in packages:
+            if not any(pack.move_line_ids):
+                docids.append(pack.id)
+
+        return self._generate_qrcodes_report(docids)
+
+    def _generate_qrcodes_report(self, docids):
+        report = http.request.env['ir.actions.report']._get_report_from_name('boxwise_wms.report_qr_codes')
+        context = dict(http.request.env.context)
+
+        pdf = report.with_context(context).render_qweb_pdf(docids)[0]
+
+        pdfhttpheaders = [('Content-Type', 'application/pdf'), ('Content-Length', len(pdf))]
+        return http.request.make_response(pdf, headers=pdfhttpheaders)
+
