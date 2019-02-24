@@ -7,7 +7,7 @@
                 <label t-att-for="widget.id">
                     <t t-esc="widget.name" />
                 </label>
-                <select t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
+                <select t-att-name="widget.id" t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
                     <!-- <option value="0">
                         <t t-esc="widget.placeholder" />
                     </option> -->
@@ -32,7 +32,9 @@
         <div />
         <t t-if="widget.visible">
             <t t-foreach="widget.selectFields" t-as="widget">
-                <t t-call="box_select_field" />
+                <div class="col-xs-6">
+                    <t t-call="box_select_field" />
+                </div>
             </t>
         </t>
     </t>
@@ -57,6 +59,8 @@
 
     <t t-name="box_form">
         <form action="/box/submit" method="POST">
+            <input type="hidden" name="csrf_token" t-att-value="widget.csrf_token"/>
+            <!-- <input type="hidden" name="package_id" t-att-value="package.id"/> -->
             <div class='o_select_category' />
             <div class='o_select_subcategory' />
             <div class='o_select_product' />
