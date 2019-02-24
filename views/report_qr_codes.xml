@@ -10,7 +10,7 @@
                     <div class="row">
                         <t t-foreach="docs" t-as="doc">
                             <div class="col-xs-3 text-center">
-                                <img width="200" height="200" t-att-src="'/report/barcode/QR/%s' % slug(doc)"/>
+                                <img width="200" height="200" t-att-src="'/report/barcode?type=QR&amp;value=%s' % ('https%3A%2F%2Fapp.boxwise.co%2Fqrcode%2Fpampiraiki%2F' + slug(doc) + '%2F')"/>
                                 <p><span t-field="doc.name" /></p>
                             </div>
                         </t>
