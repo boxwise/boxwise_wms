@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <function name="write" model="ir.model.data">
+            <!-- First we need to find the record...-->
+            <function name="search" model="ir.model.data">
+                <value
+                    eval="[('module', '=', 'stock'), ('name', '=', 'seq_quant_package')]"
+                    />
+            </function>
+
+            <!-- ...and temporarily set the noupdate field to False-->
+
+            <value eval="{'noupdate': False}" />
+
+        </function>
+
+        <!-- Get our main job done, i.e. modify the domain_force field of a record -->
+        <record id="stock.seq_quant_package" model="ir.sequence">
+            <field name="implementation">random_id</field>
+        </record>
+
+        <!-- (Optional) Time to clean our dirty hand, set the previously noupdate False to True again -->
+        <function name="write" model="ir.model.data">
+            <function name="search" model="ir.model.data">
+                <value
+                    eval="[('module', '=', 'stock'), ('name', '=', 'seq_quant_package')]"
+                    />
+            </function>
+            <value eval="{'noupdate': True}" />
+        </function>
+    </data>
+</odoo>

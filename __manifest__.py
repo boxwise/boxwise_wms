@@ -34,6 +34,7 @@
         'views/report_qr_codes_alt.xml',
         'templates/layout.xml',
         'templates/assets.xml',
+        'sequences/ir.sequence.xml'
         # demo data
         # 'demo/stock.move.csv',
         # 'demo/stock.picking.csv'
