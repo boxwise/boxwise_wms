@@ -1,104 +1,110 @@
-id,name,sale_ok,purchase_ok,type,list_price,description_sale,categ_id/id
-product_template_104,Bra,TRUE,TRUE,product,40,,product.product_category_uw
-product_template_1,Socks,TRUE,TRUE,product,10,,product.product_category_uw
-product_template_2,Tights,TRUE,TRUE,product,20,,product.product_category_uw
-product_template_3,Undershirt,TRUE,TRUE,product,10,,product.product_category_uw
-product_template_4,Underwear,TRUE,TRUE,product,15,,product.product_category_uw
-product_template_5,Winter Socks,TRUE,TRUE,product,10,"Thick, wool socks.",product.product_category_uw
-product_template_6,Formal Trousers,TRUE,TRUE,product,60,,product.product_category_bo
-product_template_7,Jeans,TRUE,TRUE,product,50,,product.product_category_bo
-product_template_8,Leggings,TRUE,TRUE,product,10,,product.product_category_bo
-product_template_9,Maternity bottom,TRUE,TRUE,product,50,Pregnancy wear bottom,product.product_category_bo
-product_template_10,Shorts,TRUE,TRUE,product,20,,product.product_category_bo
-product_template_11,Skirt/Shorts,TRUE,TRUE,product,20,,product.product_category_bo
-product_template_12,Sweatpants,TRUE,TRUE,product,50,,product.product_category_bo
-product_template_13,Trousers,TRUE,TRUE,product,50,,product.product_category_bo
-product_template_14,Button Up Shirt,TRUE,TRUE,product,40,,product.product_category_to
-product_template_15,Jumper,TRUE,TRUE,product,0,,product.product_category_to
-product_template_16,Long sleeve,TRUE,TRUE,product,50,,product.product_category_to
-product_template_19,Maternity top,TRUE,TRUE,product,50,Pregnancy wear Tops,product.product_category_to
-product_template_20,Short Sleeve,TRUE,TRUE,product,30,,product.product_category_to
-product_template_21,Accessories,TRUE,TRUE,product,10,Jewelry etc,product.product_category_ac
-product_template_22,Baby creme,TRUE,TRUE,product,5,,product.product_category_ac
-product_template_23,Belt,TRUE,TRUE,product,10,,product.product_category_ac
-product_template_24,Gloves,TRUE,TRUE,product,15,,product.product_category_ac
-product_template_25,Hair accessories,TRUE,TRUE,product,5,,product.product_category_ac
-product_template_26,Hat,TRUE,TRUE,product,15,,product.product_category_ac
-product_template_27,Insole,TRUE,TRUE,product,20,,product.product_category_ac
-product_template_28,Plastic bag,TRUE,TRUE,product,20,,product.product_category_ac
-product_template_29,Scarf,TRUE,TRUE,product,15,,product.product_category_ac
-product_template_30,Sleeping masks,TRUE,TRUE,product,10,,product.product_category_ac
-product_template_31,Small Bag,TRUE,TRUE,product,20,"Handbag, Purse, cheap bag",product.product_category_ac
-product_template_32,Wallets and moneybelts,TRUE,TRUE,product,0,,product.product_category_ac
-product_template_33,Winter Hat,TRUE,TRUE,product,15,,product.product_category_ac
-product_template_34,Light Shoes,TRUE,TRUE,product,70,,product.product_category_sh
-product_template_35,Rubber Boots,TRUE,TRUE,product,50,"Wellies,",product.product_category_sh
-product_template_36,Sandal,TRUE,TRUE,product,30,,product.product_category_sh
-product_template_37,Shoes,TRUE,TRUE,product,20,,product.product_category_sh
-product_template_38,Slipper,TRUE,TRUE,product,30,,product.product_category_sh
-product_template_39,Slippers,TRUE,TRUE,product,30,,product.product_category_sh
-product_template_40,Sport shoes,TRUE,TRUE,product,80,,product.product_category_sh
-product_template_41,Winter Shoes,TRUE,TRUE,product,70,,product.product_category_sh
-product_template_42,Autumn Jacket,TRUE,TRUE,product,50,,product.product_category_ja
-product_template_43,Formal Jacket,TRUE,TRUE,product,60,,product.product_category_ja
-product_template_44,Light Jacket,TRUE,TRUE,product,40,,product.product_category_ja
-product_template_45,Rain Jacket / Rainwear,TRUE,TRUE,product,30,,product.product_category_ja
-product_template_46,Sleeveless Jacket / Vest,TRUE,TRUE,product,50,,product.product_category_ja
-product_template_47,Snowsuit,TRUE,TRUE,product,70,,product.product_category_ja
-product_template_48,Suit Jacket,TRUE,TRUE,product,50,,product.product_category_ja
-product_template_49,Winter Jacket,TRUE,TRUE,product,60,,product.product_category_ja
-product_template_50,Dress,TRUE,TRUE,product,50,,product.product_category_dr
-product_template_51,Hijab,TRUE,TRUE,product,15,,product.product_category_dr
-product_template_52,Traditional Dress,TRUE,TRUE,product,60,,product.product_category_dr
-product_template_53,Winter Dress/Skirt,TRUE,TRUE,product,60,,product.product_category_dr
-product_template_54,Winter Skirt,TRUE,TRUE,product,50,,product.product_category_dr
-product_template_55,Baby carrier,TRUE,TRUE,product,40,,product.product_category_ba
-product_template_56,Baby pacifier,TRUE,TRUE,product,10,,product.product_category_ba
-product_template_57,Baby wipes,TRUE,TRUE,product,30,,product.product_category_ba
-product_template_58,Bib,TRUE,TRUE,product,10,,product.product_category_ba
-product_template_59,Body,TRUE,TRUE,product,30,One piece without legs,product.product_category_ba
-product_template_60,Bottom,TRUE,TRUE,product,30,,product.product_category_ba
-product_template_61,Jacket,TRUE,TRUE,product,60,,product.product_category_ba
-product_template_62,Newborn - 2 months,TRUE,TRUE,product,30,,product.product_category_ba
-product_template_63,One Piece (with legs),TRUE,TRUE,product,20,,product.product_category_ba
-product_template_64,Sheet,TRUE,TRUE,product,20,,product.product_category_ba
-product_template_65,Top,TRUE,TRUE,product,30,,product.product_category_ba
-product_template_66,Basin white,TRUE,TRUE,product,60,,product.product_category_ho
-product_template_67,Big Bag,TRUE,TRUE,product,80,"Backpack, Suitcase, Luggage, Travel bags",product.product_category_ho
-product_template_68,Blanket,TRUE,TRUE,product,30,",",product.product_category_ho
-product_template_69,Broom,TRUE,TRUE,product,0,,product.product_category_ho
-product_template_70,Duvet,TRUE,TRUE,product,80,Thick winter blankets,product.product_category_ho
-product_template_71,Duvet covers,TRUE,TRUE,product,30,,product.product_category_ho
-product_template_72,Hot water bottle,TRUE,TRUE,product,30,,product.product_category_ho
-product_template_73,Knitting set,TRUE,TRUE,product,10,,product.product_category_ho
-product_template_74,Laundry soap,TRUE,TRUE,product,15,,product.product_category_hy
-product_template_75,Nightwear,TRUE,TRUE,product,20,,product.product_category_cl
-product_template_76,Pillow,TRUE,TRUE,product,0,,product.product_category_ho
-product_template_77,Pillow cases,TRUE,TRUE,product,15,,product.product_category_ho
-product_template_78,Pregnancy,TRUE,TRUE,product,40,,product.product_category_cl
-product_template_79,Sleeping bag,TRUE,TRUE,product,30,,product.product_category_ho
-product_template_80,Stroller,TRUE,TRUE,product,50,Baby Trolly,product.product_category_ba
-product_template_81,Tie,TRUE,TRUE,product,10,,product.product_category_ac
-product_template_82,Towels,TRUE,TRUE,product,20,,product.product_category_ho
-product_template_83,Body Sponge,TRUE,TRUE,product,10,,product.product_category_hy
-product_template_84,Condoms,TRUE,TRUE,product,0,,product.product_category_hy
-product_template_85,Diaper,TRUE,TRUE,product,0,,product.product_category_hy
-product_template_86,Earplugs,TRUE,TRUE,product,10,,product.product_category_hy
-product_template_87,Hand Soap,TRUE,TRUE,product,20,,product.product_category_hy
-product_template_88,Mosquito Repellent,TRUE,TRUE,product,20,,product.product_category_hy
-product_template_89,Pacifier,TRUE,TRUE,product,20,,product.product_category_ba
-product_template_90,Razors,TRUE,TRUE,product,10,,product.product_category_hy
-product_template_91,Reusable Sanitary Pads,TRUE,TRUE,product,20,,product.product_category_hy
-product_template_92,Sanitary pads,TRUE,TRUE,product,0,,product.product_category_hy
-product_template_93,Sanitary towel ,TRUE,TRUE,product,10,,product.product_category_hy
-product_template_94,Shampoo ,TRUE,TRUE,product,40,,product.product_category_hy
-product_template_95,Shaving Cream,TRUE,TRUE,product,20,,product.product_category_hy
-product_template_96,Shower Gel,TRUE,TRUE,product,40,,product.product_category_hy
-product_template_97,Small Towels ,TRUE,TRUE,product,10,,product.product_category_ho
-product_template_98,Sun Lipstick,TRUE,TRUE,product,10,,product.product_category_hy
-product_template_99,Sunscreen,TRUE,TRUE,product,10,,product.product_category_hy
-product_template_100,Talcum Powder,TRUE,TRUE,product,20,,product.product_category_ba
-product_template_101,Toothbrush,TRUE,TRUE,product,30,,product.product_category_hy
-product_template_102,Toothpaste,TRUE,TRUE,product,30,,product.product_category_hy
-product_template_103,Wet Wipes,TRUE,TRUE,product,30,,product.product_category_hy
-product_template_105,Toy,TRUE,TRUE,product,5,,product.product_category_ho
+id,name,sale_ok,purchase_ok,type,categ_id/id
+boxwise_wms.product_template_clsumadtop,Top,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadts,T-shirt,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadtr,Trousers,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadsh,Shorts,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadjo,Joggers,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadsk,Skirt,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumaddr,Dress,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadpa,Pajamas,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadund,Underwear,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+boxwise_wms.product_template_clsumadso,Socks,TRUE,TRUE,product,boxwise_wms.product_category_clsumad
+
+boxwise_wms.product_template_clsumchtop,Top,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchts,T-shirt,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchtr,Trousers,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchsh,Shorts,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchjo,Joggers,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchsk,Skirt,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchdr,Dress,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchpa,Pajamas,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchund,Underwear,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+boxwise_wms.product_template_clsumchso,Socks,TRUE,TRUE,product,boxwise_wms.product_category_clsumch
+
+boxwise_wms.product_template_clsumbabpa,Pajamas,TRUE,TRUE,product,boxwise_wms.product_category_clsumbab
+boxwise_wms.product_template_clsumbabso,Socks,TRUE,TRUE,product,boxwise_wms.product_category_clsumbab
+boxwise_wms.product_template_clsumbabcl,Clothes,TRUE,TRUE,product,boxwise_wms.product_category_clsumbab
+
+boxwise_wms.product_template_clwinadco,Coat,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadsw,Sweater,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadtop,Top,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadtr,Trousers,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadjo,Joggers,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinaddr,Dress,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadpa,Pajamas,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadund,Underwear,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadso,Socks,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadsc,Scarve,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadha,Hat,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+boxwise_wms.product_template_clwinadgl,Gloves,TRUE,TRUE,product,boxwise_wms.product_category_clwinad
+
+boxwise_wms.product_template_clwinchco,Coat,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchsw,Sweater,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchtop,Top,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchtr,Trousers,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchjo,Joggers,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchdr,Dress,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchpa,Pajamas,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchund,Underwear,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchso,Socks,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchsc,Scarve,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchha,Hat,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+boxwise_wms.product_template_clwinchgl,Gloves,TRUE,TRUE,product,boxwise_wms.product_category_clwinch
+
+boxwise_wms.product_template_clwinbabco,Coat,TRUE,TRUE,product,boxwise_wms.product_category_clwinbab
+boxwise_wms.product_template_clwinbabpa,Pajamas,TRUE,TRUE,product,boxwise_wms.product_category_clwinbab
+boxwise_wms.product_template_clwinbabso,Socks,TRUE,TRUE,product,boxwise_wms.product_category_clwinbab
+boxwise_wms.product_template_clwinbabcl,Clothes,TRUE,TRUE,product,boxwise_wms.product_category_clwinbab
+boxwise_wms.product_template_clwinbaha,Hat,TRUE,TRUE,product,boxwise_wms.product_category_clwinbab
+boxwise_wms.product_template_clwinbagl,Gloves,TRUE,TRUE,product,boxwise_wms.product_category_clwinbab
+
+boxwise_wms.product_template_clspradco,Coat,TRUE,TRUE,product,boxwise_wms.product_category_clsprad
+boxwise_wms.product_template_clspradrai,Raincoat,TRUE,TRUE,product,boxwise_wms.product_category_clsprad
+
+boxwise_wms.product_template_clsprchco,Coat,TRUE,TRUE,product,boxwise_wms.product_category_clsprch
+boxwise_wms.product_template_clsprchrai,Raincoat,TRUE,TRUE,product,boxwise_wms.product_category_clsprch
+
+boxwise_wms.product_template_clsprbabco,Coat,TRUE,TRUE,product,boxwise_wms.product_category_clsprbab
+
+boxwise_wms.product_template_shsumadtr,Trainers,TRUE,TRUE,product,boxwise_wms.product_category_shsumad
+boxwise_wms.product_template_shsumadsh,Closed shoes,TRUE,TRUE,product,boxwise_wms.product_category_shsumad
+boxwise_wms.product_template_shsumadsa,Sandals,TRUE,TRUE,product,boxwise_wms.product_category_shsumad
+
+boxwise_wms.product_template_shsumchtr,Trainers,TRUE,TRUE,product,boxwise_wms.product_category_shsumch
+boxwise_wms.product_template_shsumchsh,Closed shoes,TRUE,TRUE,product,boxwise_wms.product_category_shsumch
+boxwise_wms.product_template_shsumchsa,Sandals,TRUE,TRUE,product,boxwise_wms.product_category_shsumch
+
+boxwise_wms.product_template_shsumbab,Baby shoes,TRUE,TRUE,product,boxwise_wms.product_category_shsumbab
+
+boxwise_wms.product_template_shwinadbo,Boots,TRUE,TRUE,product,boxwise_wms.product_category_shwinad
+boxwise_wms.product_template_shwinadrai,Rain boots,TRUE,TRUE,product,boxwise_wms.product_category_shwinad
+
+boxwise_wms.product_template_shwinchbo,Boots,TRUE,TRUE,product,boxwise_wms.product_category_shwinch
+boxwise_wms.product_template_shwinchrai,Rain boots,TRUE,TRUE,product,boxwise_wms.product_category_shwinch
+
+boxwise_wms.product_template_shwinbab,Baby shoes,TRUE,TRUE,product,boxwise_wms.product_category_shwinbab
+
+boxwise_wms.product_template_bedadbl,Blanket,TRUE,TRUE,product,boxwise_wms.product_category_bedad
+boxwise_wms.product_template_bedadkbl,Knitted blanket,TRUE,TRUE,product,boxwise_wms.product_category_bedad
+boxwise_wms.product_template_bedadduv,Duvet,TRUE,TRUE,product,boxwise_wms.product_category_bedad
+boxwise_wms.product_template_bedadshe,Sheet,TRUE,TRUE,product,boxwise_wms.product_category_bedad
+boxwise_wms.product_template_bedadpc,Pillow case,TRUE,TRUE,product,boxwise_wms.product_category_bedad
+boxwise_wms.product_template_bedadpi,Pillow,TRUE,TRUE,product,boxwise_wms.product_category_bedad
+
+boxwise_wms.product_template_bedbabbl,Blanket,TRUE,TRUE,product,boxwise_wms.product_category_bedbab
+boxwise_wms.product_template_bedbabkbl,Knitted blanket,TRUE,TRUE,product,boxwise_wms.product_category_bedbab
+boxwise_wms.product_template_bedbabduv,Duvet,TRUE,TRUE,product,boxwise_wms.product_category_bedbab
+boxwise_wms.product_template_bedbabshe,Sheet,TRUE,TRUE,product,boxwise_wms.product_category_bedbab
+boxwise_wms.product_template_bedbabpc,Pillow case,TRUE,TRUE,product,boxwise_wms.product_category_bedbab
+boxwise_wms.product_template_bedbabpi,Pillow,TRUE,TRUE,product,boxwise_wms.product_category_bedbab
+boxwise_wms.product_template_bedbabsb,Sleeping bag,TRUE,TRUE,product,boxwise_wms.product_category_bedbab
+
+boxwise_wms.product_template_otsb,Sleeping bag,TRUE,TRUE,product,boxwise_wms.product_category_ot
+boxwise_wms.product_template_otten,Tent,TRUE,TRUE,product,boxwise_wms.product_category_ot
+boxwise_wms.product_template_otbabca,Baby carriage,TRUE,TRUE,product,boxwise_wms.product_category_ot
+boxwise_wms.product_template_otbabcar,Baby carrier,TRUE,TRUE,product,boxwise_wms.product_category_ot
+boxwise_wms.product_template_otbabbe,Baby bed,TRUE,TRUE,product,boxwise_wms.product_category_ot
+boxwise_wms.product_template_otbabpa,Baby packs,TRUE,TRUE,product,boxwise_wms.product_category_ot
+boxwise_wms.product_template_ottoy,Toy,TRUE,TRUE,product,boxwise_wms.product_category_ot
+boxwise_wms.product_template_ot,Misc,TRUE,TRUE,product,boxwise_wms.product_category_ot
+

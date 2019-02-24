@@ -17,6 +17,7 @@
     ],
     'data': [
         'data/product.category.csv',
+        'data/product_category.xml',
         'data/product.template.csv',
 	    'data/product.attribute.csv',
 	    'data/product.attribute.value.csv',
