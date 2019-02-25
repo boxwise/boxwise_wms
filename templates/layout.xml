@@ -3,9 +3,11 @@
     <template id="boxwise_footer" inherit_id="website.footer_custom" name="Boxwise Footer">
         <xpath expr="//div[@id='footer']" position="replace">
             <div class="container">
-                <a href="https://donate.boxwise.co" class="pull-left" style="margin-top:10px">
-                    Support us!
-                </a>
+                <div class="pull-left">
+                    <a href="https://www.boxwise.co">About us</a>
+                    <a href="https://donate.boxwise.co">Support us!</a>
+                    <a href="https://www.youtube.com/channel/UCIrY9bskqUpDWeF8nyn6wvgo">How to Boxwise</a>
+                </div>
                 <h4 class="pull-right">
                     <a t-attf-href="mailto:{{res_company.email}}">
                         <i class="fa fa-envelope"/>
