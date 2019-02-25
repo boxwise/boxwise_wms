@@ -91,19 +91,6 @@ odoo.define("boxwise_wms.box_form", function(require) {
         _calcProducts: function() {
             this.SelectProduct.iterator = [];
             var cats = [];
-            // if (this.SelectSubcategory.selected) {
-            //     cats.push(this.SelectSubcategory.selected);
-            // } else {
-            //     cats.push(this.SelectCategory.selected);
-            //     for (var cat_id in this.user.subcategories) {
-            //         if (
-            //             this.user.subcategories[cat_id].parent_id ==
-            //             this.SelectCategory.selected
-            //         ) {
-            //             cats.push(parseInt(cat_id));
-            //         }
-            //     }
-            // }
             for (var prod_id in this.user.products) {
                 if (
                     this.user.products[prod_id].categ_id ==
@@ -127,19 +114,6 @@ odoo.define("boxwise_wms.box_form", function(require) {
             this.SelectProduct.selected = 0;
             this.SelectProduct.visible = false;
             if (this.SelectCategory.selected) {
-                // for (var subcat_id in this.user.subcategories) {
-                //     if (
-                //         this.user.subcategories[subcat_id].parent_id ==
-                //         this.SelectCategory.selected
-                //     ) {
-                //         this.SelectSubcategory.iterator.push(
-                //             this.user.subcategories[subcat_id]
-                //         );
-                //     }
-                // }
-                // if (this.SelectSubcategory.iterator.length) {
-                //     this.SelectSubcategory.visible = true;
-                // }
                 this._calcProducts();
                 this.SelectProduct.visible = true;
             }
