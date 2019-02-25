@@ -14,6 +14,7 @@
 
     'data': [
         'data/main_partner.xml',
+        'data/product_category_delete.xml',
         'data/report.paperformat.csv',
         'data/website_menu.xml',
         'data/website_page.xml',
