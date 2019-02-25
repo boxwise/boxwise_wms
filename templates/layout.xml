@@ -51,11 +51,10 @@
         <field name="inherit_id" ref="website.layout_footer_copyright"/>
         <field name="arch" type="xml">
             <data>
-                <xpath expr="//div[@class='container mt16 mb8']" position="replace">
-                    <div />
+                <xpath expr="//div[hasclass('pull-right')]" position="replace">
+                    <div class="pull-right"/>
                 </xpath>
             </data>
         </field>
     </record>
-
 </odoo>
