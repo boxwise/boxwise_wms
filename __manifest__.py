@@ -14,7 +14,6 @@
         'data/product.attribute.csv',
         'data/product.attribute.value.csv',
         'data/product.category.csv',
-        'data/product.category.delete.xml',
         'data/product.template.csv',
         'data/res.partner.csv',
         # demo data
