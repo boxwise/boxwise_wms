@@ -1,6 +1,6 @@
 from odoo import fields, models, api, _
 from odoo.exceptions import Warning as UserWarning
-import random, wdb
+import random
 import string
 import logging
 
