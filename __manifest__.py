@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Boxwise Warehouse Management - Pampiraki Data",
+    'name': "Boxwise - Pampiraiki Data",
 
     'author': "Humanilog",
     'website': "www.humanilog.org",
