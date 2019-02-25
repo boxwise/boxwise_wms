@@ -28,10 +28,10 @@
         'templates/assets.xml',
 
         'qrcodes/generate_qr.xml',
+        'qrcodes/report.paperformat.csv',
         'qrcodes/report_qr_codes.xml',
         'qrcodes/report_qr_codes_alt.xml',
         'qrcodes/report_qr_codes_alt2.xml',
-        'qrcodes/report.paperformat.csv',
 
         # leave at bottom
         'data/init.xml',

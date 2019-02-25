@@ -20,7 +20,7 @@
         </xpath>
     </template>
 
-    <template id="report_assets_common" name="Technical Service Assets Reports" inherit_id="web.report_assets_common">
+    <template id="report_assets_common" name="QR Code Asset Reports" inherit_id="web.report_assets_common">
         <xpath expr="." position="inside">
             <link rel="stylesheet" href="boxwise_wms/static/report.less" />
         </xpath>
