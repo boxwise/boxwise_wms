@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from . import controllers
-from . import qrcodes
+from . import wizards
 from . import sequences
 
 from odoo import api, SUPERUSER_ID, fields, models

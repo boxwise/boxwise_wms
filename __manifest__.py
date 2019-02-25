@@ -27,11 +27,11 @@
         'templates/layout.xml',
         'templates/assets.xml',
 
-        'qrcodes/generate_qr.xml',
-        'qrcodes/report.paperformat.csv',
-        'qrcodes/report_qr_codes.xml',
-        'qrcodes/report_qr_codes_alt.xml',
-        'qrcodes/report_qr_codes_alt2.xml',
+        'views/generate_qr.xml',
+        'data/report.paperformat.csv',
+        'reports/report_qr_codes.xml',
+        'reports/report_qr_codes_alt.xml',
+        'reports/report_qr_codes_alt2.xml',
 
         # leave at bottom
         'data/init.xml',
