@@ -53,6 +53,8 @@ def run_on_every_install_or_upgrade(env):
     seq = env.ref("stock.seq_quant_package")
     if not seq.implementation == 'random_id':
         seq.write({'implementation': 'random_id'})
+    if not seq.prefix == '':
+        seq.write({'prefix': ''})
 
 def _delete_if_exists(env, module_name, xml_id):
     target_name = module_name + '.' + xml_id
