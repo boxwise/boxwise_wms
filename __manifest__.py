@@ -15,7 +15,6 @@
         'data/product.attribute.value.csv',
         'data/product.category.csv',
         'data/product.template.csv',
-        'data/res.partner.csv',
         # demo data
         #'demo/stock.move.csv',
         #'demo/stock.picking.csv'

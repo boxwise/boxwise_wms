@@ -1,2 +1,2 @@
 id,location_dest_id/id,location_id/id,picking_type_id/id,move_lines/id,partner_id/id
-picking_test3,stock.stock_location_stock,stock.stock_location_suppliers,stock.picking_type_in,boxwise_wms_pampiraiki.move_test2,boxwise_wms_pampiraiki.res_partner_donor
+picking_test3,stock.stock_location_stock,stock.stock_location_suppliers,stock.picking_type_in,boxwise_wms_pampiraiki.move_test2,boxwise_wms.res_partner_donor
