@@ -41,6 +41,7 @@
             </section>
             <section class="s_form">
                 <div class="container">
+                    <input type="hidden" id="package" t-att-value="package.id"/>
                     <div class="o_box_form" />
                 </div>
             </section>
