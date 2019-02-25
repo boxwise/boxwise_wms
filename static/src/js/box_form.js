@@ -19,7 +19,11 @@ odoo.define("boxwise_wms.box_form", function(require) {
         },
         init: function(parent, options) {
             this._super.apply(this, arguments);
-            this.user = new User({ id: odoo.session_info.user_id });
+            this.user = new User({
+                id: odoo.session_info.user_id,
+                package: parseInt($("#package")[0].value),
+                csrf_token: core.csrf_token
+            });
         },
         willStart: function() {
             return $.when(
@@ -87,25 +91,23 @@ odoo.define("boxwise_wms.box_form", function(require) {
         _calcProducts: function() {
             this.SelectProduct.iterator = [];
             var cats = [];
-            if (this.SelectSubcategory.selected) {
-                cats.push(this.SelectSubcategory.selected);
-            } else {
-                cats.push(this.SelectCategory.selected);
-                for (var cat_id in this.user.subcategories) {
-                    if (
-                        this.user.subcategories[cat_id].parent_id ==
-                        this.SelectCategory.selected
-                    ) {
-                        cats.push(parseInt(cat_id));
-                    }
-                }
-            }
+            // if (this.SelectSubcategory.selected) {
+            //     cats.push(this.SelectSubcategory.selected);
+            // } else {
+            //     cats.push(this.SelectCategory.selected);
+            //     for (var cat_id in this.user.subcategories) {
+            //         if (
+            //             this.user.subcategories[cat_id].parent_id ==
+            //             this.SelectCategory.selected
+            //         ) {
+            //             cats.push(parseInt(cat_id));
+            //         }
+            //     }
+            // }
             for (var prod_id in this.user.products) {
                 if (
-                    jQuery.inArray(
-                        this.user.products[prod_id].categ_id,
-                        cats
-                    ) >= 0
+                    this.user.products[prod_id].categ_id ==
+                    this.SelectCategory.selected
                 ) {
                     this.SelectProduct.iterator.push(
                         this.user.products[prod_id]
@@ -119,30 +121,30 @@ odoo.define("boxwise_wms.box_form", function(require) {
             this.SelectCategory.selected = parseInt(
                 $("#" + this.SelectCategory.id)[0].value
             );
-            this.SelectSubcategory.selected = 0;
-            this.SelectSubcategory.visible = false;
-            this.SelectSubcategory.iterator = [];
+            // this.SelectSubcategory.selected = 0;
+            // this.SelectSubcategory.visible = false;
+            // this.SelectSubcategory.iterator = [];
             this.SelectProduct.selected = 0;
             this.SelectProduct.visible = false;
             if (this.SelectCategory.selected) {
-                for (var subcat_id in this.user.subcategories) {
-                    if (
-                        this.user.subcategories[subcat_id].parent_id ==
-                        this.SelectCategory.selected
-                    ) {
-                        this.SelectSubcategory.iterator.push(
-                            this.user.subcategories[subcat_id]
-                        );
-                    }
-                }
-                if (this.SelectSubcategory.iterator.length) {
-                    this.SelectSubcategory.visible = true;
-                }
+                // for (var subcat_id in this.user.subcategories) {
+                //     if (
+                //         this.user.subcategories[subcat_id].parent_id ==
+                //         this.SelectCategory.selected
+                //     ) {
+                //         this.SelectSubcategory.iterator.push(
+                //             this.user.subcategories[subcat_id]
+                //         );
+                //     }
+                // }
+                // if (this.SelectSubcategory.iterator.length) {
+                //     this.SelectSubcategory.visible = true;
+                // }
                 this._calcProducts();
                 this.SelectProduct.visible = true;
             }
             this.SelectCategory._rerender();
-            this.SelectSubcategory._rerender();
+            // this.SelectSubcategory._rerender();
             this.SelectProduct._rerender();
             this.AttributeGroup._destroySelectFields();
             this.BoxFormEnd.visible = false;
@@ -193,10 +195,10 @@ odoo.define("boxwise_wms.box_form", function(require) {
             }
         },
         _select2() {
-            $("#"+this.id).select2({
+            $("#" + this.id).select2({
                 theme: "bootstrap",
                 placeholder: this.placeholder,
-                allowClear: true,
+                allowClear: true
             });
         },
         _rerender: function() {

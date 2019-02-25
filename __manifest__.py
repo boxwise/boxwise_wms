@@ -15,15 +15,16 @@
 
     'data': [
         'data/main_partner.xml',
+        'data/res.partner.csv',
         'data/website_menu.xml',
         'data/website_page.xml',
         'data/website_settings.xml',
         'data/inventory_settings.xml',
         'data/user_groups.xml',
         'views/packages.xml',
-        'views/edit_package.xml',
-        'views/find_package.xml',
-        'views/show_package.xml',
+        'views/home.xml',
+        'views/box_edit.xml',
+        'views/box_view.xml',
         'templates/layout.xml',
         'templates/assets.xml',
 

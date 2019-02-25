@@ -69,15 +69,13 @@ odoo.define("box.classes", function(require) {
                     model: "product.category",
                     method: "search_read",
                     args: [[]],
-                    kwargs: { fields: ["id", "name", "parent_id"] }
+                    kwargs: { fields: ["id", "name", "child_id", "display_name"] }
                 })
                 .then(function(cats) {
                     for (var cat of cats) {
-                        cat.parent_id = cat.parent_id[0];
-                        if (cat.parent_id == 1) {
+                        if (cat.child_id.length<1) {
+                            cat.name = cat.display_name.substring(6)
                             self.categories[cat.id] = new Category(cat);
-                        } else if (cat.parent_id > 1) {
-                            self.subcategories[cat.id] = new Category(cat);
                         }
                     }
                     return self;

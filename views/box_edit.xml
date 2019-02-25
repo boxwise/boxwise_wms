@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="edit_package">
+    <template id="box_edit">
         <t t-call="website.layout">
             <t t-set="head">
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
@@ -41,6 +41,7 @@
             </section>
             <section class="s_form">
                 <div class="container">
+                    <input type="hidden" id="package" t-att-value="package.id"/>
                     <div class="o_box_form" />
                 </div>
             </section>
