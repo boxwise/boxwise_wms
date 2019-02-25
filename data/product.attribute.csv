@@ -1,4 +1,0 @@
-id,name,create_variant
-boxwise_wms.product_attribute_size,Size,TRUE
-boxwise_wms.product_attribute_gender,Gender,TRUE
-boxwise_wms.product_attribute_shoesize,Shoe size,TRUE

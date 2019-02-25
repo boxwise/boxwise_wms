@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data>
-        <delete model="product.category" id="product.product_category_1" />
-    </data>
-</odoo>
