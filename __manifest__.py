@@ -13,14 +13,9 @@
     'depends': ['stock', 'website_menu_by_user_status'],
 
     'data': [
-        'data/product.category.csv',
-        'data/product_category.xml',
-        'data/product.attribute.csv',
-        'data/product.attribute.value.csv',
-        'data/product.template.csv',
         'data/main_partner.xml',
+        'data/product_category_delete.xml',
         'data/report.paperformat.csv',
-        'data/res.partner.csv',
         'data/website_menu.xml',
         'data/website_page.xml',
         'data/website_settings.xml',
@@ -35,8 +30,5 @@
         'templates/layout.xml',
         'templates/assets.xml',
         'sequences/ir.sequence.xml'
-        # demo data
-        # 'demo/stock.move.csv',
-        # 'demo/stock.picking.csv'
     ],
 }
