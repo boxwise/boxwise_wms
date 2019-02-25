@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <function
+            id="boxwise_config_xml_init"
+            model="boxwise_config"
+            name="xml_init"/>
+   </data>
+</odoo>

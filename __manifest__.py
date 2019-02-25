@@ -11,10 +11,10 @@
     'version': '11.0.1.0.5',
 
     'depends': ['stock', 'website_menu_by_user_status'],
+    'post_init_hook': 'post_init_hook',
 
     'data': [
         'data/main_partner.xml',
-        'data/product_category_delete.xml',
         'data/report.paperformat.csv',
         'data/website_menu.xml',
         'data/website_page.xml',
@@ -29,6 +29,8 @@
         'views/report_qr_codes_alt.xml',
         'templates/layout.xml',
         'templates/assets.xml',
-        'sequences/ir.sequence.xml'
+
+        # leave at bottom
+        'data/init.xml',
     ],
 }

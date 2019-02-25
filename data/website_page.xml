@@ -4,9 +4,4 @@
         <field name="name">Boxwise</field>
         <field name="favicon" type="base64" file="boxwise_wms/static/src/favicon/favicon.ico"/>
     </record>
-
-
-    <delete model="website.page" id="website.homepage_page" />
-    <delete model="website.page" id="website.contactus_page" />
-    <delete model="website.page" id="website.aboutus_page" />
 </odoo>

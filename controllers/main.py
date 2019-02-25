@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import http
 import wdb
-
-
 import werkzeug
 from odoo.addons.http_routing.models.ir_http import slug
 
