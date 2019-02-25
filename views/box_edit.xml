@@ -26,14 +26,6 @@
                             </t>
                             <t t-else="">
                                 <h2>Make a new Box</h2>
-                                ToDo:
-                                <ul>
-                                    <li>Remove saleable</li>
-                                    <li>Variants are not shown yet.</li>
-                                    <li>Change select2 field for Bootstrap 3</li>
-                                    <li>load data when box is filled.</li>
-                                    <li>UI Design</li>
-                                </ul>
                             </t>
                         </div>
                     </div>
