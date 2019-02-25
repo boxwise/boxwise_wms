@@ -1,6 +1,7 @@
 <odoo>
     <data>
         <record model="res.config.settings" id="res_config_settings_boxwise">
+            <field name="website_name" eval="'Boxwise'"/>
             <field name="has_google_analytics" eval="1"/>
             <field name="google_analytics_key" eval="'UA-135092361-2'"/>
         </record>
