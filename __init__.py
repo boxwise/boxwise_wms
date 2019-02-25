@@ -6,7 +6,6 @@ from . import sequences
 
 from odoo import api, SUPERUSER_ID, fields, models
 
-import wdb
 import logging
 
 _logger = logging.getLogger(__name__)
@@ -38,7 +37,6 @@ def run_on_every_install_or_upgrade(env):
     # are applied for each version (see 'Addon updates and data migration' in Odoo cookbook)
     # but this seems simpler for now
     _logger.info("Running boxwise_wms steps: every install or upgrade")
-    #wdb.set_trace()
     # these are created when we install the stock module
     _delete_if_exists(env, "product", "product_category_1")
     # these are created when we install the website module
