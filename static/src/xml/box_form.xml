@@ -43,9 +43,6 @@
             <div class="form-group">
                 <input type="number" name="items" pattern="\d*" placeholder="Number of items" class="form-control" min="1" required="True" aria-required="true" />
             </div>
-            <div class="form-group">
-                <input type="text" name="comments" placeholder="Comments for this box" value="" class="form-control" />
-            </div>
             <!-- Submit button -->
             <div class="form-group">
                 <button class="btn btn-primary o_box_form_submit">
