@@ -21,9 +21,9 @@
         'data/inventory_settings.xml',
         'data/user_groups.xml',
         'views/packages.xml',
-        'views/edit_package.xml',
-        'views/find_package.xml',
-        'views/show_package.xml',
+        'views/home.xml',
+        'views/box_edit.xml',
+        'views/box_view.xml',
         'templates/layout.xml',
         'templates/assets.xml',
 

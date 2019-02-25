@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="show_package">
+    <template id="box_view">
         <t t-call="website.layout">
             <div class="container">
                 <section class="s_title">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="find_package">
+    <template id="home">
         <t t-call="website.layout">
             <div class="container">
                 <section class="s_title">
@@ -22,7 +22,7 @@
                         </p>
                         <div class="list-group">
                             <t t-foreach="empty_packages" t-as="package">
-                                <a class="list-group-item list-group-item-action" t-attf-href="/box/edit/{{ slug(package) }}">
+                                <a class="list-group-item list-group-item-action" t-attf-href="/box/{{ slug(package) }}/edit">
                                     <t t-esc="package.name"/>
                                 </a>
                             </t>

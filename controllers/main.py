@@ -6,9 +6,15 @@ from odoo.addons.http_routing.models.ir_http import slug
 _logger = logging.getLogger(__name__)
 
 
+<<<<<<< HEAD
 class LabelingController(http.Controller):
 
     @http.route('/findbox', type='http', auth='user', website=True)
+=======
+class HomeController(http.Controller):
+    # Find box. For now it is our home.
+    @http.route('/home', type='http', auth='user', website=True)
+>>>>>>> Clean up
     def find_package(self, **kw):
         packages = http.request.env['stock.quant.package'].search([])
         empty, filled = [], []
@@ -17,20 +23,25 @@ class LabelingController(http.Controller):
                 filled.append(pack)
             else:
                 empty.append(pack)
-        return http.request.render('boxwise_wms.find_package', {
+        return http.request.render('boxwise_wms.home', {
             'empty_packages': empty,
             'filled_packages': filled
         })
 
+
+class BoxController(http.Controller):
+
+    # Box info screen
     @http.route('/box/<model("stock.quant.package"):package>/', type='http', auth='user', website=True)
-    def show_package(self, package):
-        return http.request.render('boxwise_wms.show_package', {
+    def view(self, package):
+        return http.request.render('boxwise_wms.box_view', {
             'package': package
         })
 
-    @http.route('/box/edit/<model("stock.quant.package"):package>/', type='http', auth='user', website=True)
-    def edit_package(self, package):
-        return http.request.render('boxwise_wms.edit_package', {
+    # Update or put new content into a box
+    @http.route('/box/<model("stock.quant.package"):package>/edit', type='http', auth='user', website=True)
+    def edit(self, package):
+        return http.request.render('boxwise_wms.box_edit', {
             'package': package
         })
 
@@ -38,14 +49,18 @@ class LabelingController(http.Controller):
     def qrcode(self, tenant, package):
         return werkzeug.utils.redirect('/boxwise/labeling/%s' % slug(package))
 
-    @http.route('/box/submit', type='http', auth='user', website=True)
-    def write_package(self, **kw):
+    # Box form submit
+    @http.route('/box/submit', type='http', auth='user', website=True, methods=['POST'])
+    def submit(self, **kw):
+        # Parsing form input
         attribute_ids = [att[9:] for att in kw.keys() if 'Attribute' in att]
         attribute_value_ids = [kw['Attribute'+att] for att in attribute_ids]
+        # find related product variant (product.product)
         search_string = [('product_tmpl_id', '=', int(kw['ProductTemplate']))]
         for att_val in attribute_value_ids:
             search_string.append(('attribute_value_ids', '=', int(att_val)))
         product = http.request.env['product.product'].search(search_string)
+        # data to pass for stock.picking, stock.move, stock.move.line
         product_uom_id = http.request.env.ref(
             'product.product_uom_unit').id
         location_dest_id = http.request.env.ref(
@@ -56,7 +71,7 @@ class LabelingController(http.Controller):
             'boxwise_wms.res_partner_donor').id
         picking_type_id = http.request.env.ref(
             'stock.picking_type_in').id
-
+        # Create a new receipt (stock.picking) with corresponding stock.move
         stock_picking = http.request.env['stock.picking'].create({
             'partner_id': partner_id,
             'location_id': location_id,
@@ -67,7 +82,7 @@ class LabelingController(http.Controller):
                                    'product_uom': product_uom_id
                                    }]]
         })
-        _logger.debug(stock_picking)
+        # write to stock.move and create linked stock.move.line
         stock_picking.move_lines.ensure_one().write({
             'move_line_ids':
             [[0, 0,
@@ -80,6 +95,7 @@ class LabelingController(http.Controller):
                'result_package_id': int(kw['package']),
                }
               ]]})
+        # validate stock.picking
         stock_picking.button_validate()
-
+        # redirect to infoscreen
         return werkzeug.utils.redirect('/box/%s' % slug(stock_picking.move_line_ids.result_package_id))
