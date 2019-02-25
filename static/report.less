@@ -1,9 +1,11 @@
 
-.qrcode-report, .qrcode-report-alt {
+.qrcode-report, .qrcode-report-alt, .qrcode-report-alt2 {
 
     .product-categories {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 20px;
+        margin-right: -20px;
+        padding-right: 0;
 
         .product-category {
             margin-bottom: 20px;
@@ -17,21 +19,51 @@
     .delete-required { font-weight: normal; font-size: 12px; }
 
     .box-number {
-        font-size: 21px;
+        font-size: 35px;
         font-weight: bold;
-        margin-top: 15px;
+        line-height: 1em;
+        padding-top: 2px;
     }
 
-    .package { padding: 40px 20px; }
-
+    .package { padding: 30px 10px; }
+    .logo-container { margin-bottom: 28px; padding-bottom: 10px; border-bottom: 2px solid #ccc }
+    .qrcode-container { padding-right: 0; }
     .qrcode img { width: 200px; height: 200px; }
     .qrcode {
-        margin: -18px 0 -18px -18px; /* remove the whitespace from the image so we have more control over layout */
+        margin: -12px 0 0 30px; /* remove the whitespace from the image so we have more control over layout */
     }
+    .logo { height: 35px; border: 0;}
     .identifier { padding: 0; }
 
-    .product-attr { border-top: 1px solid; margin-top: 100px; font-weight: bold;}
+    .product-attr { border-top: 1px solid; margin-top: 120px; font-weight: bold; font-size: 16px; }
 
+}
+.qrcode-report-alt2 { 
+    .package { padding: 20px 0px; }
+    .product-categories {
+        font-size: 22px;
+    }
+    
+
+    .logo-header { 
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+
+        div { height: 35px; position: relative; }
+        .logo { margin-bottom: 0; }
+        .box-number { margin-top: 0; font-size: 22px; position: absolute; bottom: 0; right: 0; }
+    }
+
+
+    .product-attr { border-top: 1px solid; margin-top: 70px; font-weight: bold;}
+
+    .product-categories {
+        .product-category-alt {
+            margin-top: 42px;
+        }
+    }
+    .product-attr-secondary { border-top: 1px solid; margin-top: 60px; font-weight: bold;}
 }
 .qrcode-report-alt {
 

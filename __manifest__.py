@@ -15,7 +15,6 @@
 
     'data': [
         'data/main_partner.xml',
-        'data/report.paperformat.csv',
         'data/website_menu.xml',
         'data/website_page.xml',
         'data/website_settings.xml',
@@ -25,11 +24,14 @@
         'views/edit_package.xml',
         'views/find_package.xml',
         'views/show_package.xml',
-        'views/generate_qr.xml',
-        'views/report_qr_codes.xml',
-        'views/report_qr_codes_alt.xml',
         'templates/layout.xml',
         'templates/assets.xml',
+
+        'views/generate_qr.xml',
+        'data/report.paperformat.csv',
+        'reports/report_qr_codes.xml',
+        'reports/report_qr_codes_alt.xml',
+        'reports/report_qr_codes_alt2.xml',
 
         # leave at bottom
         'data/init.xml',
