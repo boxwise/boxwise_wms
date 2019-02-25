@@ -59,8 +59,8 @@
 
     <t t-name="box_form">
         <form action="/box/submit" method="POST">
-            <input type="hidden" name="csrf_token" t-att-value="widget.csrf_token"/>
-            <!-- <input type="hidden" name="package_id" t-att-value="package.id"/> -->
+            <input type="hidden" name="csrf_token" t-att-value="widget.user.csrf_token"/>
+            <input type="hidden" name="package" t-att-value="widget.user.package"/>
             <div class='o_select_category' />
             <div class='o_select_subcategory' />
             <div class='o_select_product' />

@@ -19,8 +19,11 @@ odoo.define("boxwise_wms.box_form", function(require) {
         },
         init: function(parent, options) {
             this._super.apply(this, arguments);
-            this.user = new User({ id: odoo.session_info.user_id });
-            this.csrf_token = core.csrf_token;
+            this.user = new User({
+                id: odoo.session_info.user_id,
+                package: parseInt($("#package")[0].value),
+                csrf_token: core.csrf_token
+            });
         },
         willStart: function() {
             return $.when(
