@@ -10,7 +10,7 @@ http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes_alt_template/1,2,3
 <odoo>
     <data>
         <report id="print_qr_codes_alt" name="boxwise_wms.report_qr_codes_alt_template" model="stock.quant.package" string="QR codes (alt layout)" report_type="qweb-pdf"
-        file="boxwise_wms.report_qr_codes_alt_template" menu="True" paperformat="boxwise_wms.paperformat_euro_landscape"  />
+        file="boxwise_wms.report_qr_codes_alt_template" menu="True" paperformat="boxwise_wms.paperformat_euro_landscape_nomargin"  />
 
         <template id="report_qr_codes_alt_template">
             <t t-call="web.basic_layout">
