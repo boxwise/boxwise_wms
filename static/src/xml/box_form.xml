@@ -8,9 +8,7 @@
                     <t t-esc="widget.name" />
                 </label>
                 <select t-att-name="widget.id" t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
-                    <!-- <option value="0">
-                        <t t-esc="widget.placeholder" />
-                    </option> -->
+                    <option></option>
                     <t t-foreach="widget.iterator" t-as="iterator">
                         <t t-if="widget.selected == iterator.id">
                             <option t-att-value="iterator.id" selected="True">
