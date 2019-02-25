@@ -65,7 +65,7 @@ class BoxController(http.Controller):
         location_id = http.request.env.ref(
             'stock.stock_location_suppliers').id
         partner_id = http.request.env.ref(
-            'boxwise_wms_pampiraiki.res_partner_donor').id
+            'boxwise_wms.res_partner_donor').id
         picking_type_id = http.request.env.ref(
             'stock.picking_type_in').id
         # Create a new receipt (stock.picking) with corresponding stock.move
