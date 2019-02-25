@@ -8,40 +8,41 @@
                         Box
                         <t t-esc="package.name" />
                     </h2>
-                    ToDo:
-                    <ul>
-                        <li>Make wizard for move a box</li>
-                        <li>Show Box history</li>
-                        <li>Remove items from box action</li>
-                        <li>edit box forwarding</li>
-                        <li>UI Design</li>
-                    </ul>
                 </section>
 
                 <section class="s_content">
-                    <strong>contains</strong>
-                    <div class="row cardish-thingie my-xs-1">
-                        <div class="col-xs-2">
-                            <t t-esc="package.move_line_ids[0].qty_done" />
-                        </div>
-                        <div class="col-xs-10">
-                            <t t-esc="package.move_line_ids[0].product_id.name" />
-                            <t t-foreach="package.move_line_ids[0].product_id.attribute_value_ids" t-as="attribute_value">
-                                <div class="row">
-                                    <div class="card-row">
-                                        <div class="col-xs-5">
-                                            <t t-esc="attribute_value.attribute_id.name" />
-                                        </div>
-                                        <div class="col-xs-5">
-                                            <t t-esc="attribute_value.name" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </t>
-                        </div>
-                    </div>
+                    <h3>Contents</h3>
+                    <table class="table table-bordered table-striped">
+                    <colgroup>
+                        <col class="col-xs-1" />
+                        <col class="col-xs-7" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Product</th>
+                            <td><t t-esc="package.move_line_ids[0].product_id.categ_id.name" /> <t t-esc="package.move_line_ids[0].product_id.name" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quantity</th>
+                            <td><t t-esc="package.move_line_ids[0].qty_done" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Category
+                            </th>
+                            <td><t t-esc="package.move_line_ids[0].product_id.categ_id.display_name" /></td>
+                        </tr>
+                        <t t-foreach="package.move_line_ids[0].product_id.attribute_value_ids" t-as="attribute_value">
+                            <tr>
+                                <th scope="row"><t t-esc="attribute_value.attribute_id.name" /></th>
+                                <td><t t-esc="attribute_value.name" /></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                    </table>
+                    
                 </section>
-                <section class="s_change">
+                <!--<section class="s_change">
                     <div class="some-group">
                         <a class="btn btn-primary" href="">Move the Box</a>
                     </div>
@@ -67,6 +68,7 @@
                         </div>
                     </div>
                 </section>
+                 -->
             </div>
         </t>
     </template>
