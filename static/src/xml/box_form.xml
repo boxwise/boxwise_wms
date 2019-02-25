@@ -8,9 +8,7 @@
                     <t t-esc="widget.name" />
                 </label>
                 <select t-att-name="widget.id" t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
-                    <!-- <option value="0">
-                        <t t-esc="widget.placeholder" />
-                    </option> -->
+                    <option></option>
                     <t t-foreach="widget.iterator" t-as="iterator">
                         <t t-if="widget.selected == iterator.id">
                             <option t-att-value="iterator.id" selected="True">
@@ -44,9 +42,6 @@
         <t t-if="widget.visible">
             <div class="form-group">
                 <input type="number" name="items" pattern="\d*" placeholder="Number of items" class="form-control" min="1" required="True" aria-required="true" />
-            </div>
-            <div class="form-group">
-                <input type="text" name="comments" placeholder="Comments for this box" value="" class="form-control" />
             </div>
             <!-- Submit button -->
             <div class="form-group">

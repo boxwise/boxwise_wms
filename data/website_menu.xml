@@ -6,7 +6,7 @@
             <field name="user_not_logged">False</field>
         </record>
         <record id="menu_findabox" model="website.menu">
-            <field name="name">Find a Box</field>
+            <field name="name">Home</field>
             <field name="parent_id" ref="website.main_menu" />
             <field name="url">/home</field>
             <field name="is_visible">True</field>
