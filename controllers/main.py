@@ -6,15 +6,9 @@ from odoo.addons.http_routing.models.ir_http import slug
 _logger = logging.getLogger(__name__)
 
 
-<<<<<<< HEAD
-class LabelingController(http.Controller):
-
-    @http.route('/findbox', type='http', auth='user', website=True)
-=======
 class HomeController(http.Controller):
     # Find box. For now it is our home.
     @http.route('/home', type='http', auth='user', website=True)
->>>>>>> Clean up
     def find_package(self, **kw):
         packages = http.request.env['stock.quant.package'].search([])
         empty, filled = [], []
@@ -28,9 +22,16 @@ class HomeController(http.Controller):
             'filled_packages': filled
         })
 
+    # Do not change this route. All created boxes are pointing to this one
+    @http.route('/qrcode/<tenant>/<model("stock.quant.package"):package>/', auth='user')
+    def qrcode(self, tenant, package):
+        if not any(package.move_line_ids):
+            return werkzeug.utils.redirect('/box/%s/edit' % slug(package))
+        else:
+            return werkzeug.utils.redirect('/box/%s' % slug(package))
+
 
 class BoxController(http.Controller):
-
     # Box info screen
     @http.route('/box/<model("stock.quant.package"):package>/', type='http', auth='user', website=True)
     def view(self, package):
@@ -44,10 +45,6 @@ class BoxController(http.Controller):
         return http.request.render('boxwise_wms.box_edit', {
             'package': package
         })
-
-    @http.route('/qrcode/<tenant>/<model("stock.quant.package"):package>/', auth='user')
-    def qrcode(self, tenant, package):
-        return werkzeug.utils.redirect('/boxwise/labeling/%s' % slug(package))
 
     # Box form submit
     @http.route('/box/submit', type='http', auth='user', website=True, methods=['POST'])
@@ -68,7 +65,7 @@ class BoxController(http.Controller):
         location_id = http.request.env.ref(
             'stock.stock_location_suppliers').id
         partner_id = http.request.env.ref(
-            'boxwise_wms.res_partner_donor').id
+            'boxwise_wms_pampiraiki.res_partner_donor').id
         picking_type_id = http.request.env.ref(
             'stock.picking_type_in').id
         # Create a new receipt (stock.picking) with corresponding stock.move

@@ -10,7 +10,7 @@
     'category': 'Uncategorized',
     'version': '11.0.1.0.5',
 
-    'depends': ['stock', 'website_menu_by_user_status'],
+    'depends': ['stock', 'website_menu_by_user_status', 'boxwise_wms_pampiraiki'],
     'post_init_hook': 'post_init_hook',
 
     'data': [
