@@ -14,8 +14,8 @@
                     <h3>Contents</h3>
                     <table class="table table-bordered table-striped">
                     <colgroup>
-                        <col class="col-xs-1" />
-                        <col class="col-xs-7" />
+                        <col class="col-xs-3" />
+                        <col class="col-xs-9" />
                     </colgroup>
                     <tbody>
                         <tr>
