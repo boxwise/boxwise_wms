@@ -39,7 +39,7 @@ http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,
                                             ADULT <span class="sep">/</span> CHILD <span class="sep">/</span> BABY
                                         </div>
                                         <div class="product-category">
-                                            MALE <span class="sep">/</span> FEMALE <span class="sep">/</span> UNISEX                                         <div class="delete-required">(circle as required)</div>
+                                            MALE <span class="sep">/</span> FEMALE <span class="sep">/</span> UNISEX <span class="sep">/</span> MIXED                                           <div class="delete-required">(circle as required)</div>
 
                                         </div>
                                     </div>
