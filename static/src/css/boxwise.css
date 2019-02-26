@@ -122,6 +122,9 @@ footer .pull-left {
 footer .pull-left a {
     margin-right: 20px;
 }
+
+#oe_main_menu_navbar { display: none; }
+
 .navbar-default {
     background-color: #f0eef1;
     border-color: transparent;
