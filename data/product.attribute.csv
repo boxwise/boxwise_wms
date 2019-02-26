@@ -2,3 +2,4 @@ id,name,create_variant
 boxwise_wms_pampiraiki.product_attribute_size,Size,TRUE
 boxwise_wms_pampiraiki.product_attribute_gender,Gender,TRUE
 boxwise_wms_pampiraiki.product_attribute_shoesize,Shoe size,TRUE
+boxwise_wms_pampiraiki.product_attribute_season,Season,TRUE
