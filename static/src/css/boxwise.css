@@ -122,8 +122,10 @@ footer .pull-left {
 footer .pull-left a {
     margin-right: 20px;
 }
-
+/* override odoo styles to hide navbar */
 #oe_main_menu_navbar { display: none; }
+body.o_connected_user { padding-top: 0 }
+
 
 .navbar-default {
     background-color: #f0eef1;
