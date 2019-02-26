@@ -38,7 +38,7 @@ class CustomPackageSequence(models.Model):
             package_number = self._append_prefix_and_suffix(random_sequence)
 
             #check if this box number already exists (in current company only!)
-            if not self.env['stock.quant.package'].search_count([('name','=',package_number),('company_id','=',current_company_id)]):
+            if not self.env['stock.quant.package'].search_count([('name','=',package_number)]):
                 break
             tries += 1
         if tries == max_tries:
