@@ -14,9 +14,25 @@
                     </div>
                 </section>
                 <section class="s_list">
-                    <h4>
-                        All Boxes
-                    </h4>
+                    <t t-if="empty_packages">
+                        <form method="POST" action="/box/reprint/">
+
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token(None)"/>
+                            <input type="submit" value="Re-print labels" />
+                        </form>
+                    </t>
+                    <h4>Generate &amp; print labels</h4>
+                    <form method="POST" action="/labels/generate/" class="form-inline form-always-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="count">Number</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="count" id="count" placeholder="Number to generate" />
+                            </div>
+                        </div>
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token(None)"/>
+                        <button type="submit" class="btn btn-primary">Generate labels</button>
+                    </form>
+                    <h4>All Boxes</h4>
                     <div class="list-group">
                         <t t-foreach="filled_packages" t-as="package">
                             <a class="list-group-item list-group-item-action" t-attf-href="/box/{{ slug(package) }}">
