@@ -14,13 +14,6 @@
                     </div>
                 </section>
                 <section class="s_list">
-                    <t t-if="empty_packages">
-                        <form method="POST" action="/box/reprint/">
-
-                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token(None)"/>
-                            <input type="submit" value="Re-print labels" />
-                        </form>
-                    </t>
                     <h4>Generate &amp; print labels</h4>
                     <form method="POST" action="/labels/generate/" class="form-inline form-always-inline">
                         <div class="form-group">
@@ -32,12 +25,15 @@
                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token(None)"/>
                         <button type="submit" class="btn btn-primary">Generate labels</button>
                     </form>
-                    <h4>All Boxes</h4>
+                    <h4>All boxes</h4>
                     <div class="list-group">
                         <t t-foreach="filled_packages" t-as="package">
                             <a class="list-group-item list-group-item-action" t-attf-href="/box/{{ slug(package) }}">
                                 <t t-esc="package.name"/>
                             </a>
+                        </t>
+                        <t t-if="len(filled_packages) == 0">
+                            <p>You have no boxes yet! Print some labels and scan the QR code to get started</p>
                         </t>
                     </div>
                 </section>
