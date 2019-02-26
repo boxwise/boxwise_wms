@@ -12,18 +12,6 @@
                     <a t-attf-href="mailto:{{res_company.email}}">
                         <i class="fa fa-envelope"/>
                     </a>
-                    <!-- <a href="https://www.facebook.com/boxwise.co">
-                        <i class="fa fa-facebook-square"/>
-                    </a>
-                    <a href="https://github.com/boxwise">
-                        <i class="fa fa-github"/>
-                    </a>
-                    <a href="https://www.linkedin.com/company/boxwiseco/">
-                        <i class="fa fa-linkedin"/>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCIrY9bskqUpDWeF8nyn6wvg">
-                        <i class="fa fa-youtube-play"/>
-                    </a> -->
                     <a t-att-href="website.social_facebook" t-if="website.social_facebook">
                         <i class="fa fa-facebook-square"/>
                     </a>
@@ -46,17 +34,16 @@
             </div>
         </xpath>
     </template>
-
-    <!-- Delete Copyright footer -->
     <record model="ir.ui.view" id="layout_footer_copyright_invisible">
         <field name="name">Make copyright footer invisible</field>
         <field name="inherit_id" ref="website.layout_footer_copyright"/>
         <field name="arch" type="xml">
             <data>
-                <xpath expr="//div[hasclass('pull-right')]" position="replace">
-                    <div class="pull-right"/>
+                <xpath expr="//footer/div[2]" position="replace">
+                    <div />
                 </xpath>
             </data>
         </field>
     </record>
+
 </odoo>
