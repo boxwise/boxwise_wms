@@ -44,7 +44,7 @@ http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes/1,2,3,4,5,6,7,8,9,
                                         </div>
                                     </div>
                                     <div class="col-xs-4 qrcode-container text-right">
-                                        <div class="qrcode"><img t-att-src="'/report/barcode?type=QR&amp;width=200&amp;height=200&amp;value=%s' % ('https%3A%2F%2Fapp.boxwise.co%2Fqrcode%2Fpampiraiki%2F' + slug(doc) + '%2F')"/></div>
+                                        <div class="qrcode"><img t-att-src="'/report/barcode?type=QR&amp;width=200&amp;height=200&amp;value=%s' % ('http%3A%2F%2Fapp.boxwise.co%2Fqrcode%2Fpampiraiki%2F' + slug(doc) + '%2F')"/></div>
                                     </div>
                                 </div>
                                 <div class="row">
