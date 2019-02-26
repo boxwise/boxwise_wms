@@ -16,6 +16,10 @@ class BoxController(http.Controller):
     # Update or put new content into a box
     @http.route('/box/<model("stock.quant.package"):package>/edit', type='http', auth='user', website=True)
     def edit(self, package):
+        if any(package.move_line_ids):
+            # for now, we don't support editing a box that has items already in it
+            return werkzeug.utils.redirect('/box/%s' % slug(package))
+        
         return http.request.render('boxwise_wms.box_edit', {
             'package': package
         })
