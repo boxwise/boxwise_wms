@@ -37,10 +37,10 @@ h2 {
 }
 
 .btn {
-    width:100%;
+    /*width:100%;*/
     border-radius: 0.125rem;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 .btn-primary {
     background-color: #009dad;
@@ -159,6 +159,13 @@ body.o_connected_user { padding-top: 0 !important; }
 .navbar-default .navbar-nav > .active > a {
     color: #000000;
 }
+
+.form-always-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
 .dropdown-menu {
     background-color: #f0eef1;
 }

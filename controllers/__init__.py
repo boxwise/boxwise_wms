@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from . import main
-from . import website
+from . import home
+from . import boxes
+from . import labels
 from . import ir_http

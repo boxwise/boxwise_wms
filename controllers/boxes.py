@@ -1,35 +1,9 @@
-# -*- coding: utf-8 -*-
 from odoo import http
 import logging
-import werkzeug
+import werkzeug.exceptions
 from odoo.addons.http_routing.models.ir_http import slug
+
 _logger = logging.getLogger(__name__)
-
-
-class HomeController(http.Controller):
-    # Find box. For now it is our home.
-    @http.route('/home', type='http', auth='user', website=True)
-    def find_package(self, **kw):
-        packages = http.request.env['stock.quant.package'].search([])
-        empty, filled = [], []
-        for pack in packages:
-            if pack.move_line_ids:
-                filled.append(pack)
-            else:
-                empty.append(pack)
-        return http.request.render('boxwise_wms.home', {
-            'empty_packages': empty,
-            'filled_packages': filled
-        })
-
-    # Do not change this route. All created boxes are pointing to this one
-    @http.route('/qrcode/<tenant>/<model("stock.quant.package"):package>/', auth='user')
-    def qrcode(self, tenant, package):
-        if not any(package.move_line_ids):
-            return werkzeug.utils.redirect('/box/%s/edit' % slug(package))
-        else:
-            return werkzeug.utils.redirect('/box/%s' % slug(package))
-
 
 class BoxController(http.Controller):
     # Box info screen
@@ -96,3 +70,4 @@ class BoxController(http.Controller):
         stock_picking.button_validate()
         # redirect to infoscreen
         return werkzeug.utils.redirect('/box/%s' % slug(stock_picking.move_line_ids.result_package_id))
+
