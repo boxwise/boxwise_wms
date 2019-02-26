@@ -3,37 +3,49 @@
     <t t-name="box_select_field">
         <div />
         <t t-if="widget.visible">
-            <div class="form-group ">
-                <label t-att-for="widget.id">
+            <div class="form-group">
+                <label t-att-for="widget.id" class="col-xs-3 control-label">
                     <t t-esc="widget.name" />
                 </label>
-                <select t-att-name="widget.id" t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
-                    <option></option>
-                    <t t-foreach="widget.iterator" t-as="iterator">
-                        <t t-if="widget.selected == iterator.id">
-                            <option t-att-value="iterator.id" selected="True">
-                                <t t-esc="iterator.name"/>
-                            </option>
-                        </t>
-                        <t t-else="">
-                            <option t-att-value="iterator.id">
-                                <t t-esc="iterator.name"/>
-                            </option>
-                        </t>
-                    </t>
-                </select>
+                <div class="col-xs-9">
+                    <t t-call="box_select" />
+                </div>
             </div>
         </t>
+    </t>
+
+    <t t-name="box_select">
+        <select t-att-name="widget.id" t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
+            <option></option>
+            <t t-foreach="widget.iterator" t-as="iterator">
+                <t t-if="widget.selected == iterator.id">
+                    <option t-att-value="iterator.id" selected="True">
+                        <t t-esc="iterator.name"/>
+                    </option>
+                </t>
+                <t t-else="">
+                    <option t-att-value="iterator.id">
+                        <t t-esc="iterator.name"/>
+                    </option>
+                </t>
+            </t>
+        </select>
     </t>
 
     <t t-name="box_attribute_group">
         <div />
         <t t-if="widget.visible">
-            <t t-foreach="widget.selectFields" t-as="widget">
-                <div class="col-xs-6">
-                    <t t-call="box_select_field" />
-                </div>
-            </t>
+            <div class="form-group">
+                <t t-foreach="widget.selectFields" t-as="widget">
+                    <label t-att-for="widget.id" class="col-xs-3 control-label">
+                        <t t-esc="widget.name" />
+                    </label>
+                    <div class="col-xs-3">
+                        <t t-call="box_select" />
+                    </div>
+                </t>
+                
+            </div>
         </t>
     </t>
 
@@ -41,7 +53,12 @@
         <div />
         <t t-if="widget.visible">
             <div class="form-group">
-                <input type="number" name="items" pattern="\d*" placeholder="Number of items" class="form-control" min="1" required="True" aria-required="true" />
+                <label t-att-for="number" class="col-xs-3 control-label">
+                    Number of items
+                </label>
+                <div class="col-xs-3">
+                    <input type="number" name="items" pattern="\d*" placeholder="Number of items" class="form-control" min="1" required="True" aria-required="true" />
+                </div>
             </div>
             <!-- Submit button -->
             <div class="form-group">
@@ -53,7 +70,7 @@
     </t>
 
     <t t-name="box_form">
-        <form action="/box/submit" method="POST">
+        <form action="/box/submit" method="POST" class="form-horizontal">
             <input type="hidden" name="csrf_token" t-att-value="widget.user.csrf_token"/>
             <input type="hidden" name="package" t-att-value="widget.user.package"/>
             <div class='o_select_category' />
