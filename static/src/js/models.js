@@ -74,7 +74,7 @@ odoo.define("box.classes", function(require) {
                 .then(function(cats) {
                     for (var cat of cats) {
                         if (cat.child_id.length<1) {
-                            cat.name = cat.display_name.substring(6)
+                            cat.name = cat.display_name
                             self.categories[cat.id] = new Category(cat);
                         }
                     }
