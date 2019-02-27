@@ -54,7 +54,6 @@ odoo.define("boxwise_wms.box_form", function(require) {
                     );
                 }
                 self.SelectCategory.appendTo($(".o_select_category"));
-                self.SelectCategory._select2();
                 self.SelectSubcategory = new BoxSelectField(self, {
                     id: "ProductSubcategory",
                     name: "Subcategory",
@@ -168,18 +167,10 @@ odoo.define("boxwise_wms.box_form", function(require) {
                 this[key] = values[key];
             }
         },
-        _select2() {
-            $("#" + this.id).select2({
-                theme: "bootstrap",
-                placeholder: this.placeholder,
-                allowClear: true
-            });
-        },
         _rerender: function() {
             this.replaceElement(
                 qweb.render("box_select_field", { widget: this })
             );
-            this._select2();
         }
     });
 
