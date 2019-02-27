@@ -15,7 +15,7 @@
     </t>
 
     <t t-name="box_select">
-        <select t-att-name="widget.id" t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control">
+        <select t-att-name="widget.id" t-att-id="widget.id" t-att-placeholder="widget.placeholder" class="form-control" required="True" aria-required="true">
             <option></option>
             <t t-foreach="widget.iterator" t-as="iterator">
                 <t t-if="widget.selected == iterator.id">
