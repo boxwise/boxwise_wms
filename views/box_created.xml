@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="box_created">
+        <t t-call="website.layout">
+            <div class="container">
+                <section class="s_title">
+                    <div class="box-created"><p>
+                        <t t-if="total_created_boxes == 1">
+                        You just created your <strong>first box</strong>, 
+                        </t>
+                        <t t-else="">
+                        </t>
+                        You just created your <br /><strong><t t-esc="total_created_boxes" />th box</strong>,<br />
+                        and helped sort <br /> <strong><t t-esc="total_quantity" /></strong> items. 
+                        </p>
+                        <p class="thanks">Thank you!</p>
+                    </div>
+                </section>
+
+                <section class="s_content">
+                    <h3>Your last box was</h3>
+                    <table class="table table-bordered table-striped">
+                    <colgroup>
+                        <col class="col-xs-4" />
+                        <col class="col-xs-10" />
+                    </colgroup>
+                    <tbody> 
+                        <tr>
+                            <th scope="row">Box #</th>
+                            <td><t t-esc="package.name" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Product</th>
+                            <td><t t-esc="package.move_line_ids[0].product_id.categ_id.name" /> <t t-esc="package.move_line_ids[0].product_id.name" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quantity</th>
+                            <td><t t-esc="int(package.move_line_ids[0].qty_done)" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Category
+                            </th>
+                            <td><t t-esc="package.move_line_ids[0].product_id.categ_id.display_name" /></td>
+                        </tr>
+                        <t t-foreach="package.move_line_ids[0].product_id.attribute_value_ids" t-as="attribute_value">
+                            <tr>
+                                <th scope="row"><t t-esc="attribute_value.attribute_id.name" /></th>
+                                <td><t t-esc="attribute_value.name" /></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                    </table>
+                    <h3>What next?</h3>
+                    <p>To create your next box, scan another QR code.</p>
+                </section>
+
+            </div>
+        </t>
+    </template>
+</odoo>
