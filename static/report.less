@@ -1,9 +1,21 @@
+/* this is a page with 4 labels on. we want
+   - no margin on the left of the page (the paper format has margin)
+   - padding on the right of the left hand labels (to create space for the right hand column)
+   - padding on the bottom of the top labels (to create space for the bottom labels)
+    */
+// left hand labels
+.qrcode-report:nth-child(odd) {
+    padding: 0 35px 0 0;
+}
+// top labels
+.qrcode-report:nth-child(4n-2), .qrcode-report:nth-child(4n-3) {
+    padding-bottom: 40px;
+}
 
 .qrcode-report {
-
     .product-categories {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
         margin-right: -20px;
         padding-right: 0;
 
@@ -25,16 +37,15 @@
         padding-top: 2px;
     }
 
-    .package { padding: 30px 10px 10px; }
     .logo-container { margin-bottom: 28px; padding-bottom: 10px; border-bottom: 2px solid #ccc }
     .qrcode-container { padding-right: 0; }
     .qrcode img { width: 200px; height: 200px; }
     .qrcode {
-        margin: -12px 0 0 30px; /* remove the whitespace from the image so we have more control over layout */
+        margin: -18px 0 0 15px; /* remove the whitespace from the image so we have more control over layout */
     }
     .logo { height: 35px; border: 0;}
     .identifier { padding: 0; }
 
-    .product-attr { border-top: 1px solid; margin-top: 120px; font-weight: bold; font-size: 16px; }
+    .product-attr { border-top: 1px solid; margin-top: 120px; font-weight: bold; font-size: 15px; }
 
 }
