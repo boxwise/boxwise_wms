@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="box_edit">
+    <template id="box_edit" >
         <t t-call="website.layout">
             <t t-set="head">
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"/>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css" />
-
+                
                 <t t-call-assets="boxwise_wms.box_form_assets" t-css="false"/>
                 <script type="text/javascript">
                     odoo.session_info = {
