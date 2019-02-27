@@ -66,7 +66,8 @@ http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes_template/1,2,3,4,5
                         </div>
                         <!-- page break on every 4 items -->
                         <t t-if="(doc_index + 1) % 4 == 0">
-                            <div class="clearfix" style="page-break-after:always;"> </div>
+                            <!-- using span rather than div as otherwise will break CSS -->
+                            <span class="clearfix" style="page-break-after:always;"> </span>
                         </t>
                     </t>
                 </div>

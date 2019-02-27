@@ -3,13 +3,17 @@
    - padding on the right of the left hand labels (to create space for the right hand column)
    - padding on the bottom of the top labels (to create space for the bottom labels)
     */
-// left hand labels
-.qrcode-report:nth-child(odd) {
-    padding: 0 35px 0 0;
+// left hand labels. warning, this applies to all divs, as nth-of-type ignores classes
+div.qrcode-report:nth-of-type(odd) {
+    padding: 0 40px 0 0;
 }
-// top labels
-.qrcode-report:nth-child(4n-2), .qrcode-report:nth-child(4n-3) {
+// top labels. warning, this applies to all divs, as nth-of-type ignores classes
+div.qrcode-report:nth-of-type(4n-2), div.qrcode-report:nth-of-type(4n-3) {
     padding-bottom: 40px;
+}
+// bottom labels. warning, this applies to all divs, as nth-of-type ignores classes
+div.qrcode-report:nth-of-type(4n), div.qrcode-report:nth-of-type(4n-1) {
+    padding-bottom: 20px;
 }
 
 .qrcode-report {
