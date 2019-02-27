@@ -32,13 +32,13 @@ http://localhost:11069/report/pdf/boxwise_wms.report_qr_codes_template/1,2,3,4,5
                                         CLOTHING <span class="sep">/</span> SHOES <span class="sep">/</span> BEDDING <span class="sep">/</span> OTHER
                                     </div>
                                     <div class="product-category">
-                                        WINTER <span class="sep">/</span> SUMMER <span class="sep">/</span> ALL SEASON
+                                        WINTER <span class="sep">/</span> SUMMER <span class="sep">/</span> SPRING <span class="sep">/</span> ALL
                                     </div>
                                     <div class="product-category">
                                         ADULT <span class="sep">/</span> CHILD <span class="sep">/</span> BABY
                                     </div>
                                     <div class="product-category">
-                                        MALE <span class="sep">/</span> FEMALE <span class="sep">/</span> UNISEX <span class="sep">/</span> MIXED                                     <div class="delete-required">(circle as required)</div>
+                                        MALE <span class="sep">/</span> FEMALE <span class="sep">/</span> UNISEX <span class="sep">/</span> MIXED                                     <div class="delete-required">(delete or Scircle as required)</div>
 
                                     </div>
                                 </div>
