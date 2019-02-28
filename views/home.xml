@@ -14,7 +14,7 @@
                     </div>
                 </section>
                 <section class="s_list">
-                    <h4>Generate &amp; print labels</h4>
+                    <h3>Generate &amp; print labels</h3>
                     <form method="POST" action="/labels/generate/" class="form-inline form-always-inline">
                         <div class="form-group">
                             <label class="sr-only" for="count">Number</label>
@@ -25,11 +25,11 @@
                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token(None)"/>
                         <button type="submit" class="btn btn-primary">Generate labels</button>
                     </form>
-                    
-                    <h4>View box information</h4>
+
+                    <h3>View box information</h3>
                     <p>To view the information for a specific box, scan the QR code.</p>
 
-                    <h4>All boxes</h4>
+                    <h3>All boxes</h3>
                     <div class="list-group">
                         <t t-foreach="filled_packages" t-as="package">
                             <a class="list-group-item list-group-item-action" t-attf-href="/box/{{ slug(package) }}">
