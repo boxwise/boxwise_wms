@@ -2,7 +2,6 @@ from odoo import http
 import logging
 import werkzeug.exceptions
 from odoo.addons.http_routing.models.ir_http import slug
-import wdb
 
 _logger = logging.getLogger(__name__)
 
@@ -12,23 +11,6 @@ class BoxController(http.Controller):
     def view(self, package):
         return http.request.render('boxwise_wms.box_view', {
             'package': package
-        })
-    
-    # Box info screen when you've just created one
-    @http.route('/box/<model("stock.quant.package"):package>/created', type='http', auth='user', website=True)
-    def created(self, package):
-        current_user_id = http.request.env.uid
-        # currently we consider a user to have
-        # created a box if they were the last editor
-        # on a package. this isn't the case once we
-        # start editing, so....
-        res_partner_donor_id = http.request.env.ref('boxwise_wms.res_partner_donor').id
-        created_boxes = http.request.env['stock.move'].search([('write_uid','=',current_user_id),('picking_partner_id','=',res_partner_donor_id)])
-
-        return http.request.render('boxwise_wms.box_created', {
-            'package': package,
-            'total_created_boxes': len(created_boxes),
-            'total_quantity': int(sum(map(lambda x: x.product_qty, created_boxes)))
         })
 
     # Update or put new content into a box
@@ -91,5 +73,5 @@ class BoxController(http.Controller):
         # validate stock.picking
         stock_picking.button_validate()
         # redirect to infoscreen
-        return werkzeug.utils.redirect('/box/%s/created' % slug(stock_picking.move_line_ids.result_package_id))
+        return werkzeug.utils.redirect('/box/%s' % slug(stock_picking.move_line_ids.result_package_id))
 

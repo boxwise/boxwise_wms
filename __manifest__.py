@@ -25,7 +25,6 @@
         'views/home.xml',
         'views/box_edit.xml',
         'views/box_view.xml',
-        'views/box_created.xml',
         'templates/layout.xml',
         'templates/assets.xml',
 
