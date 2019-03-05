@@ -2,7 +2,7 @@ from odoo import http
 import logging
 import werkzeug.exceptions
 from odoo.addons.http_routing.models.ir_http import slug
-import wdb
+
 
 _logger = logging.getLogger(__name__)
 
