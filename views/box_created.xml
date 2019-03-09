@@ -9,9 +9,9 @@
                         You just created your <strong>first box</strong>, 
                         </t>
                         <t t-else="">
-                        </t>
                         You just created your <br /><strong><t t-esc="total_created_boxes" />th box</strong>,<br />
                         and helped sort <br /> <strong><t t-esc="total_quantity" /></strong> items. 
+                        </t>
                         </p>
                         <p class="thanks">Thank you!</p>
                     </div>
