@@ -22,6 +22,8 @@ class HomeController(http.Controller):
             'filled_packages': filled
         })
 
+
+class BoxwiseWebsite(Website):
     @http.route('/', type='http', auth="public", website=True)
     def index(self, **kw):
         try:
@@ -31,4 +33,3 @@ class HomeController(http.Controller):
             # so we take people to a login page instead
             _logger.info("Redirecting to Login from Index", exc_info=True)
             return werkzeug.utils.redirect('/web/login', 302)
-
