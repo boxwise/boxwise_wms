@@ -11,13 +11,15 @@
     'depends': ['stock'],
 
     'data': [
+        'data/product.category.csv',
         'data/product.attribute.csv',
         'data/product.attribute.value.csv',
-        'data/product.attribute.line.csv',
-        'data/product.category.csv',
         'data/product.template.csv',
+        'data/product.attribute.line.csv',
+        'data/product_template.xml'
+
         # demo data
-        #'demo/stock.move.csv',
-        #'demo/stock.picking.csv'
+        # 'demo/stock.move.csv',
+        # 'demo/stock.picking.csv'
     ],
 }
