@@ -13,6 +13,7 @@
     'data': [
         'data/product.attribute.csv',
         'data/product.attribute.value.csv',
+        'data/product.attribute.line.csv',
         'data/product.category.csv',
         'data/product.template.csv',
         # demo data
