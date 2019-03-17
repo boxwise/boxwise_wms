@@ -22,21 +22,20 @@ Please also check out our [Code of Conduct](CODE_OF_CONDUCT.md)!
 
 ## Setting up development environment
 
-1.  Install odoo v11. We created [a Boxwise dev-setup](https://github.com/boxwise/boxwise-doodba). It is based on a docker environment for development and production of odoo by Tecnativa. It should just be 5 commands and you are ready to go. You have to have [docker](https://docs.docker.com/install/) installed for this dev-setup.
+1.  Install odoo v11. We created [a Boxwise dev-setup](https://github.com/boxwise/boxwise-doodba). It is based on a docker environment for development and production of odoo by Tecnativa. It should just be 5 commands and you are ready to go. You have to have [docker](https://docs.docker.com/install/) and docker-compose installed for this dev-setup.
 
-2.  Clone this folder into the [addons folder](https://github.com/humanilog/dev-setup/tree/11.0/addons) of your setup. **Please do NOT rename the repository!**
+2.  Clone this folder into the [private src folder](https://github.com/boxwise/boxwise-doodba/tree/11.0_wms/odoo/custom/src/privates) of your setup. **Please do NOT rename the boxwise_wms repository!**
 
     `git clone https://github.com/boxwise/boxwise_wms.git`
 
 3.  We recommend that you create your own database before you log in. There you can choose your own log in credentials and leave out the demo data of the default installation. 
 
-    - Open up odoo, e.g. `localhost:8069`
-    - Click "Manage databases"
+    - Open up odoo, e.g. `http://localhost:11069/web/database/manager`
     - Click "Create Database"
 
 4. Activate the developer mode! There two ways:
 
-    1. Add `debug` in the url --> `localhost:8069/web?debug#....` or
+    1. Add `debug` in the url --> `localhost:11069/web?debug#....` or
     2. Go to settings and click the link hidden beneath the credentials on the far right! 
 
 5.  Install the `boxwise_wms` module!
