@@ -23,7 +23,7 @@ class HomeController(http.Controller):
         })
 
 
-class BoxwiseWebsite(Website):
+class BoxwiseWebsite(http.Controller):
     @http.route('/', type='http', auth="public", website=True)
     def index(self, **kw):
         try:
