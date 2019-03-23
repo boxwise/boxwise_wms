@@ -6,7 +6,6 @@ from . import sequences
 from odoo import api, SUPERUSER_ID, fields, models
 
 import logging
-import wdb
 
 _logger = logging.getLogger(__name__)
 
