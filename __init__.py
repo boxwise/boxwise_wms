@@ -19,7 +19,7 @@ def post_init_hook(cr, registry):
         env = api.Environment(cr, SUPERUSER_ID, {})
         run_on_first_install(env)
 
-        
+
 class boxwise_config(models.AbstractModel):
     # hack to call this on every time our module loads (upgrade or not)
     @api.model
@@ -37,7 +37,7 @@ def run_on_every_install_or_upgrade(env):
     # but this seems simpler for now
     _logger.info("Running boxwise_wms steps: every install or upgrade")
     # these are created when we install the stock module
-    _delete_if_exists(env, "product", "product_category_1")
+    _delete_if_exists(env, "product", "product_category_1", ["product_count", "child_id"])
     # these are created when we install the website module
     # it does however mean we can't ever create something called this...
     _delete_if_exists(env, "website", "homepage_page")
@@ -53,11 +53,20 @@ def run_on_every_install_or_upgrade(env):
     if not seq.prefix == '':
         seq.write({'prefix': ''})
 
-def _delete_if_exists(env, module_name, xml_id):
+def _delete_if_exists(env, module_name, xml_id, connections=[]):
+    # connections are fields of the corresponding models which might be connected to other data.
     target_name = module_name + '.' + xml_id
     item_to_delete = env.ref(module_name + '.' + xml_id, raise_if_not_found=False)
     if (item_to_delete):
-        _logger.info("Deleting %s" % target_name)
-        item_to_delete.unlink()
+        # Here we check if the deletion will cause an error because other data is connected to it.
+        all_bool = True
+        for connection in connections:
+            if item_to_delete.__getattribute__(connection):
+                _logger.info("Skipping deletion of %s as there is data connected to it" % target_name)
+                all_bool = False
+                break
+        if all_bool:
+            _logger.info("Deleting %s" % target_name)
+            item_to_delete.unlink()
     else:
         _logger.info("Skipping deletion of %s as it is not present" % target_name)
