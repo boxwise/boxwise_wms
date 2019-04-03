@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Clothes Adults -->
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladts" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladts_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladts_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladts_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladsh" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsh_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsh_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsh_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladsk" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsk_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsk_ss'),0)]" />
+        </record>        
+        <record id="boxwise_wms_pampiraiki.product_template_v2_claddr" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_claddr_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_claddr_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladco" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladco_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladco_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladco_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladsw" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsw_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsw_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsw_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladso" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladso_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladso_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladsc" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsc_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladsc_ss'),0)]" />
+        </record>     
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladha" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladha_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladha_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladgl" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladgl_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladgl_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladtop" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladtop_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladtop_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladtop_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladtr" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladtr_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladtr_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladtr_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladjo" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladjo_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladjo_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladjo_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladpa" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladpa_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladpa_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladpa_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladund" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladund_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladund_sz'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_cladrai" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladrai_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_cladrai_sz'),0)]" />
+        </record>
+
+        <!-- Clothes Children -->
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchts" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchts_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchts_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchts_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchsh" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsh_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsh_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsh_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchsk" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsk_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsk_ss'),0)]" />
+        </record>        
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchdr" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchdr_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchdr_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchco" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchco_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchco_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchco_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchsw" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsw_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsw_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsw_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchso" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchso_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchso_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchsc" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsc_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchsc_ss'),0)]" />
+        </record>     
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchha" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchha_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchha_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchgl" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchgl_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchgl_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchtop" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchtop_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchtop_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchtop_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchtr" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchtr_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchtr_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchtr_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchjo" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchjo_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchjo_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchjo_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchpa" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchpa_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchpa_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchpa_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchund" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchund_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchund_sz'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clchrai" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchrai_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clchrai_sz'),0)]" />
+        </record> 
+
+        <!-- Clothes Babies -->
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clbabco" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabco_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabco_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabco_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clbabso" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabso_g'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clbabha" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabha_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabha_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clbabgl" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabgl_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabgl_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clbabcl" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabcl_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabcl_sz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabcl_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_clbabpa" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_clbabpa_g'),0)]" />
+        </record>
+
+        <!-- Shoes Adults -->
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shadtr" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadtr_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadtr_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadtr_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shadsh" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadsh_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadsh_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadsh_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shadsa" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadsa_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadsa_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadsa_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shadbo" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadbo_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadbo_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadbo_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shadrai" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadrai_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadrai_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shadrai_ss'),0)]" />
+        </record>
+
+        <!-- Shoes Children -->
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shchtr" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchtr_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchtr_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchtr_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shchsh" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchsh_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchsh_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchsh_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shchsa" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchsa_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchsa_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchsa_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shchbo" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchbo_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchbo_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchbo_ss'),0)]" />
+        </record>
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shchrai" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchrai_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchrai_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shchrai_ss'),0)]" />
+        </record>
+
+        <!-- Shoes Babies -->
+        <record id="boxwise_wms_pampiraiki.product_template_v2_shbab" model="product.template">
+            <field name="attribute_line_ids" eval="[
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shbab_g'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shbab_ssz'),0),
+            (4,ref('boxwise_wms_pampiraiki.product_attribute_line_shbab_ss'),0)]" />
+        </record>
+    </data>
+</odoo>
