@@ -9,10 +9,6 @@ class TestRandomIdSequence(common.TransactionCase):
     def setUp(self):
         super(TestRandomIdSequence, self).setUp()
 
-    #sequence_model = self.env['ir.sequence']
-    #generatedSequence = sequence_model.next_by_code('stock.quant.package')
-    #_logger.info(generatedSequence)
-
     @common.post_install(True)
     def test_random_id_sequence(self):
         sequence_model = self.env.ref("stock.seq_quant_package")
