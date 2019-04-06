@@ -10,6 +10,10 @@ class BoxController(http.Controller):
     # Box info screen
     @http.route('/box/<model("stock.quant.package"):package>/', type='http', auth='user', website=True)
     def view(self, package):
+         #if box is empy, navigate to edit page
+        if not any(package.move_line_ids):
+            return werkzeug.utils.redirect('/box/%s/edit' % slug(package))
+
         return http.request.render('boxwise_wms.box_view', {
             'package': package
         })
@@ -17,6 +21,10 @@ class BoxController(http.Controller):
     # Box info screen when you've just created one
     @http.route('/box/<model("stock.quant.package"):package>/created', type='http', auth='user', website=True)
     def created(self, package):
+         #if box is empy, navigate to edit page
+        if not any(package.move_line_ids):
+            return werkzeug.utils.redirect('/box/%s/edit' % slug(package))
+            
         current_user_id = http.request.env.uid
         # currently we consider a user to have
         # created a box if they were the last editor
