@@ -1,5 +1,7 @@
 # Boxwise
 
+THIS REPOSITORY WILL SOON BE ARCHIVED. Please refer to our [Dropapp](https://github.com/boxwise/dropapp), [boxwise-react](https://github.com/boxwise/boxwise-react), and [boxwise-flask](https://github.com/boxwise/boxwise-flask) for its replacement.
+
 Boxwise is an open-source web-app,
 which makes it easy for organisations
 to source, store and distribute
