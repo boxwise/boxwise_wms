@@ -2,6 +2,7 @@
 
 from . import controllers
 from . import sequences
+from . import tests
 
 from odoo import api, SUPERUSER_ID, fields, models
 

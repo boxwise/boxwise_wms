@@ -52,6 +52,16 @@ If you want to see all the odoo bits - the odoo backend - go to
 
 The debug tag opens odoo in developer mode.
 
+## Where to go from here?
+
+If you want to check out the boxwise frontend - the fancy designs and form - go to
+
+        localhost:11069/
+
+If you want to see all the odoo bits - the odoo backend - go to
+
+        localhost:11069/web?debug
+
 ## Useful Links
 
 We are using the open source ERP system odoo as the base for Boxwise.
